@@ -1,5 +1,5 @@
 import './landingpage.css';
-import PortfolioNavigation from '../../components/portfolio/navigation/navigation';
+import PortfolioNavigation from '../../../components/portfolio/navigation/navigation';
 import { Outlet } from 'react-router-dom';
 
 const PortfoliolandingPage = () => {
