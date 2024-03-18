@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App/App';
-import reportWebVitals from './reportWebVitals';
+import App from './app/App';
+import { BrowserRouter } from "react-router-dom";
 
+// * The index file is for wrappers and initial logic.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

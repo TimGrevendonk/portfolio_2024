@@ -1,13 +1,14 @@
 import './App.css';
-// ! Lookup what it means to have { } or not around the imports. 
-import SnubString from './utils/helpers/snubString.ts';
+import GeneralNavigation from './components/general/navigation/navigation.js';
+import Routing from '../routes/routing.js';
+// import SnubString from './utils/helpers/snubString.ts';
 
-function App() {
+// * The app file is for conditions and rendering priority.
+const App = () => {
   return (
-    <div className="App">
-      <p>helloz?</p>
-      <p>{ SnubString("this here is a long text that should be snubbed", 20) }</p>
-    </div>
+    <>
+      <Routing></Routing>
+    </>
   );
 }
 
