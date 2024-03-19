@@ -1,5 +1,28 @@
+/* Global variables */
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css";
+
+:root {
+  --lilac: 230,215,255;
+  --dark-lilac: 176, 136, 200;
+  --dark-text: 25, 18, 30;
+  --light-text: 245,245,200;
+  --background-color: 248, 252, 250;
+  --accent: 229, 224, 204;
+  --elementcorner: 0.5rem;
+  --menu-transition-delay: 0.4s;
+  --fading-light-gradient:  rgba(240,254,255,0.5) 0%, rgba(240,254,255,0.5) 85%, rgba(240,254,255,0) 100%;
+  --black-grey-fade-trim-gradient: rgba(45,45,45,1) 0%, rgba(0,0,0,1) 2%, rgba(0,0,0,1) 98%, rgba(45,45,45,1) 100%;
+  --dotted-backgound:  radial-gradient(
+    circle at center,
+    white 0,
+    black 1px,
+    black 100%
+  );
+}
+
 html {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}

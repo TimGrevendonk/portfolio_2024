@@ -1,3 +1,218 @@
-.PortfolioNavigation{
-    border: black solid 1px;
-}
+/** Basic form and out of screen position of the nav element. **/
+nav {
+    /* sizing */
+    /* 
+      calcuate the scollbar so the nav does not overflow the visual width,
+      100% is width without scollbar but the nav must first have a set width for percentages.
+    */
+    width: calc(100vw - (100vw - 100%));
+    height: 50%;
+    /* postioning */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 80;
+    transform: translatey(200%);
+    /* visuals */
+    color: rgb(var(--light-text));
+    background: linear-gradient(0deg, var(--black-grey-fade-trim-gradient));
+    /* edges */
+    margin: 0;
+    padding: 0;
+    /* animation */
+    transition: transform, translatey;
+    transition-timing-function: ease;
+    transition-duration: var(--menu-transition-delay);
+  }
+  /** Basic form of nav pointer/selector. **/
+  #menu-toggle {
+    /* sizing */
+    height: clamp(3rem, 6vw, 4rem);
+    width: clamp(3rem, 6vw, 4rem);
+    /* postioning */
+    z-index: 90;
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    transform: translate(-50%) scale(1) rotate(405deg);
+    /* edges */
+    border-width: 5px;
+    border-top: 1px;
+    border-left: 1px;
+    border-radius: 0 50% 50% 50%;
+    outline: none;
+    /* visuals */
+    background-color: rgba(var(--lilac), 0.95);
+    border-color: rgba(var(--dark-lilac), 0.95);
+    box-shadow: 0rem 0rem 5rem 1rem rgba(0, 0, 0 , 90%);
+    /* animation */
+    transition: transform, rotate;
+    transition-timing-function: ease;
+    transition-duration: var(--menu-transition-delay);
+  
+  }
+  /** Click effect. **/
+  #menu-toggle:active {
+    transform: translate(-50%) scale(0.9) rotate(406deg);
+  }
+  
+  /** Move the nav element into view if toggle on. **/
+  #menu-toggle + nav.isNavigationOpen {
+    /* sizing */
+    /* postioning */
+    transform: translatey(100%);
+    /* visuals */
+    /* edges */
+    /* animation */
+    transition: transform, translatey;
+    transition-timing-function: ease;
+    transition-duration: var(--menu-transition-delay);
+  }
+  
+  /** Rotate menu icon down if toggle on. **/
+  #menu-toggle.isNavigationOpen {
+    transform: translate(-50%) rotate(225deg);
+  }
+  #menu-toggle.isNavigationOpen:active {
+    transform: translate(-50%) rotate(226deg);
+  }
+  
+  /** menu Pointer arrow fade in on hover. **/
+  #menu-toggle > i {
+      /* sizing */
+      width: clamp(1.5rem, 4vw, 2rem);
+      height: clamp(1.5rem, 4vw, 2rem);
+      /* postioning */
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+      transform: translate(-50%) translateY(50%) rotate(-45deg);
+      /* visuals */
+      color: rgba(var(--dark-lilac), 1);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      visibility: hidden;
+      opacity: 0;
+      /* edges */
+      /* animation */
+      /** smooth fadein/out transition. **/
+      transition: visibility var(--menu-transition-delay), opacity var(--menu-transition-delay) linear;
+  }
+  
+  #menu-toggle > i.menuBars {
+    visibility: visible;
+    opacity: 70%;
+  }
+  #menu-toggle:hover > i.arrowUp,
+  #menu-toggle.isNavigationOpen > i.arrowUp {
+    /* smooth fadein/out transition */
+    visibility: visible;
+    opacity: 1;
+  }
+  #menu-toggle:hover > i.menuBars,
+  #menu-toggle.isNavigationOpen > i.menuBars {
+    /* smooth fadein/out transition */
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  /** Pulse the menu pointer of not opened. **/
+  .pulse:not(.isNavigationOpen) {
+    /* sizing */
+    height: clamp(3rem, 6vw, 4rem);
+    width: clamp(3rem, 6vw, 4rem);
+    /* postioning */
+    z-index: 89;
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    /* edges */
+    border-radius: 0 50% 50% 50%;
+    outline: none;
+    /* visuals */
+    /* animation */
+    animation: pulse 6s infinite;
+   }
+  
+   /* menu items */
+   /** Base position further below to 'pop' into the screen. **/
+  #nav-items {
+    display: flex;
+    gap: clamp(0.8rem, 2vw, 2rem);
+    margin-top: clamp(2rem, 2vw, 3rem);
+    padding: clamp(1rem, 2vw, 2rem);
+    transform: translateY(50%) scale(0.9);
+    transition: transform 1s cubic-bezier(.27,.74,.32,1.47);
+  }
+   /** If menu open, scale and move the items to the position. **/
+  .isNavigationOpen > #nav-items {
+    transform: translateY(0%) scale(1);
+  }
+   /** Transparent outline for animating hover. **/
+  #nav-items > .nav-item {
+    width: max(calc(25vw - 1rem), 100px);
+    border-radius: 0.3rem;
+    outline: 1px solid transparent;
+    transition: outline-color 200ms;
+  }
+  #nav-items > .nav-item:active {
+    outline: 2px solid transparent;
+    transform: scale(0.95);
+    transition: 200ms;
+  }
+  #nav-items > .nav-item:hover {
+    border-radius: 1px;
+    outline: 1px solid rgb(var(--light-text));
+    outline-offset: 6px;
+    transition: 150ms;
+  }
+   /** img label styling. **/
+  #nav-items > .nav-item > figure{
+    margin: 0;
+  }
+  #nav-items > .nav-item > figure > figcaption {
+    color: rgb(var(--light-text));
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+   /** responsive image on aspect ratio with a minimum height of 1/4vh or 100px. **/
+  #nav-items > .nav-item > figure > img {
+    /* width: max(calc(25vw - 1rem), 100px); */
+    height: min(25vh, 500px);
+    width: 100%;
+    /* aspect-ratio: 4/3 ; */
+    border-radius: 0.3rem;
+    object-fit: cover;
+  }
+  /** Active nav item. **/
+  .active > * {
+    opacity: 0.5;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: translate(-50%) scale(0.95) rotate(45deg);
+      box-shadow: 0 0 0 0 rgba(var(--dark-lilac), 0.9);
+    }
+    50% {
+      transform: translate(-50%) scale(0.95) rotate(45deg);
+      box-shadow: 0 0 0 0 rgba(var(--dark-lilac), 0.9);
+    }
+    70% {
+      transform: translate(-50%) scale(1) rotate(45deg);
+      box-shadow: 0 0 0.5rem 4rem rgba(var(--dark-lilac), 0);
+    }
+    100% {
+      transform: translate(-50%) scale(0.95) rotate(45deg);
+      box-shadow: 0 0 0 0 rgba(var(--dark-lilac), 0);
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    /** img label styling. **/
+    #nav-items > .nav-item > figure > figcaption {
+      font-size: 0.8rem;
+  }
+  }
+  
+  

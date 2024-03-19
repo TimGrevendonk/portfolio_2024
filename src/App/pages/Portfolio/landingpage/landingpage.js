@@ -6,8 +6,9 @@ const PortfoliolandingPage = () => {
   return (
     <div className="PortfolioLandingPage">
       <PortfolioNavigation></PortfolioNavigation>
-      <p>portfolio landings page</p>
-      {/* <Outlet></Outlet> */}
+      <main>
+        <p>portfolio landings page</p>
+      </main>
     </div>
   );
 }
