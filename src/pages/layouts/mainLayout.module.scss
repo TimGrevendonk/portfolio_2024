@@ -1,0 +1,15 @@
+@import 'styles/partials/variables';
+
+.contentContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    height: 100dvh;
+
+    main {
+        display: flex;
+        flex-flow: column wrap;
+        flex-grow: 1;
+        align-items: center;
+    }
+}

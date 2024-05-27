@@ -1,0 +1,44 @@
+@import 'styles/partials/variables';
+
+.navigation {
+    background-color: $mountain-blue;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    height: 88px;
+    padding: $page-padding 16px 8px $page-padding;
+    
+
+    ul {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        width: 100%;
+        li {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+            a{
+                width: calc(100% - 2rem);
+                border-radius: 0.5rem;
+                transition: all 0.3s ease-out;
+
+                &:hover {
+                    background-color: $mountain-shade-50;
+                    scale: 1.1;
+                    transition: all 0.1s ease-out;
+                    
+                }
+            }
+        }
+    }
+
+}

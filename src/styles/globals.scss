@@ -1,0 +1,90 @@
+@import 'styles/partials/variables';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    height: 100dvh;
+}
+
+h1, h2, h3 , h4, h5, h6, p, a {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+*.mountain-blue {
+    background-color: $mountain-blue;
+
+    h1, h2 {
+        color: $sunrise-yellow;
+    }
+    h3, h4, h5, h6 {
+        color: $misty-white;
+    }
+    p, a {
+        color: $misty-white;
+    }
+}
+
+h1 {
+    color: $mountain-blue;
+    font-size: clamp(48px, 4vw, 64px);
+    font-weight: 700;
+    height: 1.5em;
+}
+h2 {
+    color: $mountain-blue;
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 600;
+    height: 1.5em;
+}
+h3 {
+    color: $off-black;
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 500;
+    height: 1.5em;
+}
+h4 {
+    color: $off-black;
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 400;
+    height: 1.5em;
+}
+h5 {
+    color: $off-black;
+    font-size: clamp(16px, 4vw, 24px);
+    font-weight: 500;
+    height: 1.5em;
+}
+h6 {
+    color: $off-black;
+    font-size: clamp(16px, 4vw, 24px);
+    font-weight: 400;
+    height: 1.5em;
+}
+
+p, a {
+    &.big {
+        font-size: clamp(24px, 4vw, 32px);
+    }
+    color: $off-black;
+    font-size: clamp(16px, 4vw, 24px);
+    font-weight: 300;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
