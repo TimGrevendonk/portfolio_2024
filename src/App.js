@@ -3,12 +3,15 @@ import { HomePage } from "pages/home/HomePage";
 import { MainLayout } from "pages/layouts/MainLayout";
 import { ProjectsPage } from "pages/projects/ProjectsPage";
 import { ProjectDetailPage } from "pages/projects/project/ProjectDetailPage";
+import { ProcessPage } from "pages/process/ProcessPage";
+import { ErrorPage } from "pages/error/ErrorPage";
 
 import './App.css';
 import 'styles/globals.scss';
 
 function App() {
   return (
+    
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout />}>
@@ -17,12 +20,15 @@ function App() {
               <Route index element={<ProjectsPage />} />
               <Route path="project/:id" element={<ProjectDetailPage />} />
             </Route>
-            {/* <Route path="blogs" element={<Blogs />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<NoPage />} /> */}
+            <Route path="process" >
+              <Route index element={<ProcessPage />} />
+              {/* <Route path="process/:id" element={<ProcessDetailPage />} /> */}
+            </Route>
+            <Route path="*" element={<ErrorPage/> } />
           </Route>
         </Routes>
       </BrowserRouter>
+ 
   );
 }
 

@@ -1,5 +1,4 @@
-import { useRef } from 'react';
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import { TopNavigation } from "components/navigation/TopNavigation";
 import { BottomFooter } from "components/navigation/BottomFooter";
 import { NavigationProvider } from "utils/contexts/navigationContext";
@@ -9,6 +8,7 @@ import styles from "pages/layouts/mainLayout.module.scss";
 export function MainLayout({ ...props }) {
 
     return (
+        <>
             <div className={styles.contentContainer}>
                 <header>
                     <TopNavigation />
@@ -17,7 +17,9 @@ export function MainLayout({ ...props }) {
                     <Outlet />
                 </main>
                 <BottomFooter />
+                
             </div>
+        </>
     );
 }
 

@@ -2,6 +2,7 @@
 
 .linkButton {
     display: flex;
+    flex-flow: row nowrap;
     width: calc(100% - 2rem);
     align-self: center;
     border-radius: 0.5rem;
@@ -35,6 +36,10 @@
         margin-right: 0.5rem;
         font-size: 1em;
     }
+}
+
+.LinkText{
+
 }
 
 .actionButton {

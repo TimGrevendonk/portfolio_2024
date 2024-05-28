@@ -1,14 +1,17 @@
 @import 'styles/partials/variables';
 
 .footer {
+    display: flex;
+    flex-flow: row nowrap;
     background-color: $mountain-blue-90;
     color: $misty-white;
     padding: 1rem;
+    padding-bottom: 64px;
     text-align: center;
-
     position: relative;
-    width: 100%;
 
+
+    
     &::before {
         content: "";
         display: block;
@@ -22,5 +25,34 @@
         background-size: cover;
         background-position: top;
         z-index: -1;
+    }
+
+    > div {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        h3 {
+            padding-bottom: 0.5em;
+        }
+        a {
+            svg {
+                margin-left: 1em;
+                margin-right: 1em;
+            }
+            &:hover {
+                color: $sunrise-yellow;
+            
+            }
+        }
+    }
+
+
+    @media  (max-width: 600px) {
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 2rem;
+        > div {
+            width: calc(50% - 1rem);
+        }
     }
 }

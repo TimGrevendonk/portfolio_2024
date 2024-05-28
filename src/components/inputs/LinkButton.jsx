@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "components/inputs/inputs.module.scss";
+import { useContext } from "react";
+import { NavigationContext } from "utils/contexts/navigationContext";
 
 
 /**
@@ -15,11 +17,27 @@ export function LinkButton({ ...props }) {
     const isPdf = props.pdf ? true : false;
     const size = props.size;
     const path = props.path || "#";
+    const incommingRef = props.reference;
+    const location = useLocation();
 
+    const scrollToSection = (sectionRef) => {
+      sectionRef?.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
         <>
-        {isPdf ?
+        {incommingRef && location.pathname === "/"?
+            <Link
+            onClick={() => scrollToSection(incommingRef)}
+            className={`${styles.linkButton} ${props.size ? styles[size] : styles.big}`} 
+    
+            >
+                {props.startContent ? props.startContent : <span></span>}
+                {props.children}
+                {props.endContent ? props.endContent : <span></span>}
+            </Link>
+        : // else check for pdf
+        isPdf ?
             <a
                 className={`${styles.linkButton} ${props.size ? styles[size] : styles.big}`} 
                 href={pdfs(`./${path}.pdf`)}
