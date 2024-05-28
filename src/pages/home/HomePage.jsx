@@ -15,9 +15,6 @@ import PictureAsPdfOutlinedIcon from '@mui/icons-material/PictureAsPdfOutlined';
 import styles from "pages/home/homePage.module.scss";
 import { NavigationContext } from "utils/contexts/navigationContext";
 
-
-
-
 // Home function:
 export function HomePage() {
     const images = require.context('../../assets/images', true);

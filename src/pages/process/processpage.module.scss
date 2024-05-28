@@ -1,0 +1,70 @@
+@import 'styles/partials/variables';
+
+.containerSection{
+    display: flex;
+    justify-content: center;
+    &:nth-child(even) {
+        background-color: $mountain-blue-50;
+        
+
+        &::before {
+            content: "";
+            background-image: url("../../assets/images/background-mountains2.png");
+            background-size: cover;
+            background-position: left;
+            opacity: 0.5;
+            box-shadow: inset 0 0 0 500px #00000080;
+            transition: background-position 0.5s ease-in-out;
+            z-index: -1;
+        }
+    }
+}
+
+
+.widthSetter {
+    display: flex;
+    flex-flow: column nowrap; ;
+    width: 100%;
+    padding-left: $page-padding;
+    padding-right: $page-padding;
+
+    max-width: 1280px;
+    // ! remove
+    // min-height: 500px;
+
+    .titleSection {
+        display: flex;
+        flex-flow: column wrap;
+        flex-grow: 1;
+    }
+
+    article {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        > div, > figure {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 50%;
+            min-width: 320px;
+            img {
+                transition: width 0.5s ease-out;
+                aspect-ratio: 1/1;
+                width: 480px;
+                object-fit: cover;
+            }
+        }
+
+        @media  (max-width: 768px) {
+            flex-flow: column wrap;
+            > div, > figure {
+                width: 100%;
+                img {
+                    transition: width 0.5s ease-out;
+                    width: 320px;
+                }
+            }
+        }
+    }
+}
+
