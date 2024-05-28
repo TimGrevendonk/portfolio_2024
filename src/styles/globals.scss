@@ -23,15 +23,16 @@ main {
     flex-flow: column wrap;
 }
 
-h1, h2, h3 , h4, h5, h6, p, a {
+h1, h2, h3 , h4, h5, h6, p, a, li {
     font-family: 'Oswald', sans-serif;
     display: flex;
     align-items: center;
     line-height: 1.2em;
     svg {
-        margin-left: 0.25em;
-        margin-right: 0.25em;
+        margin-left: 0.50em;
+        margin-right: 0.50em;
         font-size: 1.3em;
+        scale: 1.5;
     }
 }
 
@@ -50,7 +51,7 @@ h1, h2, h3 , h4, h5, h6, p, a {
             fill: $misty-white;
         }
     }
-    p, a {
+    p, a, li {
         color: $misty-white;
     }
 }
@@ -104,9 +105,9 @@ h6 {
     }
 }
 
-p, a {
+p, a, li {
     color: $off-black;
-    font-size: clamp(16px, $scale-property, 24px);
+    font-size: clamp(24px, $scale-property, 32px);
     font-weight: 300;
 
 }

@@ -3,6 +3,7 @@
 .linkButton {
     display: flex;
     width: calc(100% - 2rem);
+    align-self: center;
     border-radius: 0.5rem;
     transition: all 0.3s ease-out;
     align-items: center;

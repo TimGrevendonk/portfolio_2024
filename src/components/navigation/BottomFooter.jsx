@@ -5,7 +5,7 @@ import styles from "components/navigation/bottomFooter.module.scss";
 export function BottomFooter({ ...props }) {
 
     return (
-        <footer className={styles.footer}>
+        <footer className={`${styles.footer} mountain-blue`}>
             <ul>
                 <li>
                     <Link to="/">Home</Link>

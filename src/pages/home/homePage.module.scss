@@ -1,5 +1,12 @@
 @import 'styles/partials/variables';
 
+.popout {
+    transition: scale 0.3s ease-out;
+    &:hover, &:active{
+        transition: scale 0.1s ease-out;
+        scale: 1.02;
+    }
+}
 
 .hero {
     min-height: 80vh;
@@ -104,6 +111,9 @@
         flex-flow: row nowrap;
         justify-content: space-between; 
         width: 100%;
+        padding-left: $page-padding;
+        padding-right: $page-padding;
+        gap: 0.5em;
 
         > div:first-child {
             width: 45%;
@@ -139,7 +149,7 @@
 
 .skills {
     background-color: $mountain-blue-50;
-    min-height: 60vh;
+    padding-bottom: 32px;
     &::before {
         content: "";
         background-image: url("../../assets/images/background-mountains2.png");
@@ -152,6 +162,58 @@
     }
 }
 
+.skillContent {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.skillCard {
+    width: 360px;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: $mountain-blue-50;
+
+    h3 {
+        padding: 0.5rem  0.5rem 1rem 0.5rem;
+        border-bottom: 1px solid $misty-white;
+    }
+
+    > div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0 1rem 0;
+    }
+    @media  (max-width: 600px) {
+        width: 100%;
+
+        > div {
+            gap: 0.5rem;
+            padding: 0.5rem 0 0.5rem 0;
+        }
+    }
+}
+
 .journeys {
-    min-height: 60vh;
+    
+}
+
+.journeyContent {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    gap: 1rem;
+    padding-bottom: 32px;
+
+    a {
+        color: $off-black;
+        background-color: $mountain-blue-75;
+    }
 }

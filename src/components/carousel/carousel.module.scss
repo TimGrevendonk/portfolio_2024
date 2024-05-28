@@ -26,6 +26,11 @@
 }
 
 .carouselItem {
+    cursor: w-resize;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     &:nth-child(odd) {
         .headers:first-child {
             visibility: hidden;
@@ -36,16 +41,17 @@
             visibility: hidden;
         }
     }
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     .headers{
         padding: 4px $page-padding 4px $page-padding;
+        background-color: $mountain-blue-50;
     }
     figure {
         img {
             aspect-ratio: 4/3;
             width: 540px;
             transition: width 0.5s ease-in-out;
-            @media screen and (max-width: 600px){
+            @media (max-width: 600px){
                 width: 280px;
             }
             object-fit: cover;

@@ -11,19 +11,33 @@ import styles from "components/inputs/inputs.module.scss";
  * @returns react element
  */
 export function LinkButton({ ...props }) {
+    const pdfs = require.context('../../assets/pdfs', true);
+    const isPdf = props.pdf ? true : false;
     const size = props.size;
+    const path = props.path || "#";
 
 
     return (
         <>
-        <Link
-            className={`${styles.linkButton} ${props.size ? styles[size] : styles.big}`} 
-            to={props.path}
-        >
-            {props.startContent ? props.startContent : <span></span>}
-            {props.children}
-            {props.endContent ? props.endContent : <span></span>}
-        </Link>
+        {isPdf ?
+            <a
+                className={`${styles.linkButton} ${props.size ? styles[size] : styles.big}`} 
+                href={pdfs(`./${path}.pdf`)}
+            >
+                            {props.startContent ? props.startContent : <span></span>}
+                {props.children}
+                {props.endContent ? props.endContent : <span></span>}
+            </a>
+            :
+            <Link
+                className={`${styles.linkButton} ${props.size ? styles[size] : styles.big}`} 
+                to={path}
+            >
+                {props.startContent ? props.startContent : <span></span>}
+                {props.children}
+                {props.endContent ? props.endContent : <span></span>}
+            </Link>
+        }
         </>
     );
 }

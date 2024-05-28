@@ -1,0 +1,44 @@
+@import 'styles/partials/variables';
+
+.logoIcon {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-self: flex-start;
+    transition: scale 0.3s ease-out;
+    max-width: 96px;
+    gap: 0.3rem;
+
+    img {
+        width: 96px;
+        height: 96px;
+        background-color: $misty-white;
+        padding: 4px;
+        border-radius: 5px;
+        object-fit: cover;
+        object-position: center;
+        transition: scale 0.3s ease-out;
+    }
+    p {
+        max-width: 96px;
+        text-align: center;
+        padding-bottom: 4px;
+    }
+    &:hover {
+        img {
+            transition: scale 0.1s ease-out;
+            scale: 1.1;
+        }
+        p {
+            color: $sunrise-yellow;
+        }
+    }
+    @media  (max-width: 600px) {
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+        img {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
