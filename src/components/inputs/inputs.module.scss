@@ -1,0 +1,57 @@
+@import 'styles/partials/variables';
+
+.linkButton {
+    display: flex;
+    width: calc(100% - 2rem);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-out;
+    align-items: center;
+    justify-content: space-between;
+    color: $misty-white;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+
+    &.big {
+        font-size: clamp(24px, $scale-property, 32px);
+    }
+    &.small {
+        max-width: max-content;
+    }
+
+    &:hover {
+        background-color: $mountain-shade-50;
+        scale: 1.05;
+        width: calc(100% - 2rem - 5%);
+        transition: all 0.1s ease-out;
+        
+    }
+    span {
+        width: 2em;
+    }
+    svg {
+        width: 2em;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 1em;
+    }
+}
+
+.actionButton {
+    justify-content: center;
+    align-items: center;
+    height: clamp(64px, $scale-property, 80px);
+    background-color: $sunrise-yellow;
+    color: $mountain-blue;
+    border-radius: 50px;
+    padding: 2rem;
+    transition: 0.3s ease-out;
+
+    &:hover, &:active {
+        background-color: $mountain-blue;
+        text-decoration: none;
+        * {
+            transition: 0.3s ease-out;
+            color: $sunrise-yellow;
+        }
+    }
+}

@@ -1,25 +1,32 @@
-import { Link } from "react-router-dom";
+import { LinkButton } from "components/inputs/LinkButton";
 import styles from "components/navigation/topNavigation.module.scss";
 
 // TopNavigation function:
 export function TopNavigation({ ...props }) {
-    console.log('[Debug topNavigation] rendered:', { props })
 
     return (
         <nav className={`${styles.navigation} mountain-blue`}>
           <h1>TimG</h1>
           <ul>
             <li>
-              <Link className="big" to="/">Home</Link>
+              <LinkButton path="/#home">
+                Home
+              </LinkButton>
             </li>
             <li>
-              <Link className="big" to="/#works">Works</Link>
+              <LinkButton  path="/#works" >
+                Works
+              </LinkButton>
             </li>
             <li>
-              <Link className="big" to="/#about">About</Link>
+              <LinkButton path="/#about">
+                About
+              </LinkButton>
             </li>
             <li>
-              <Link className="big" to="/#skills">Skills</Link>
+              <LinkButton path="/#skills">
+                Skills
+              </LinkButton>
             </li>
         </ul>
       </nav>

@@ -1,0 +1,110 @@
+@import 'styles/partials/variables';
+
+
+.hero {
+    min-height: 80vh;
+    &::before {
+        content: "";
+        background-image: url("../../assets/images/mediacafe-me 1.png");
+        background-size: fit;
+        background-position: center;
+        opacity: 1;
+        box-shadow: inset 0 0 0 500px #00000080;
+        transition: background-position 0.5s ease-in-out;
+        z-index: -1;
+        @media  (min-width: 600px) {
+            background-position: right;
+        }
+    }
+    
+    div {
+        &:first-child {
+            height: 90%;
+            flex-flow: column wrap;
+        }
+        &:last-child {
+            height: 10%;
+            flex-flow: row wrap;
+        }
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        h1 {
+            justify-content: center;
+            align-items: center;
+            color: $misty-white;
+        }
+        ul {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            display: flex;
+            flex-flow: row nowrap;
+            flex-grow: 1;
+            justify-content: space-around;
+    
+            li {
+                list-style: none;
+                display: flex;
+                flex-flow: row wrap;
+                flex-grow: 1;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.title {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    a {
+        display: flex;
+        margin-right: 1em;
+        align-self: end;   
+    }
+
+}
+
+.works {
+    background-color: $mountain-blue-50;
+    min-height: 60vh;
+    &::before {
+        content: "";
+        background-image: url("../../assets/images/background-mountains2.png");
+        background-size: cover;
+        background-position: left;
+        opacity: 0.5;
+        box-shadow: inset 0 0 0 500px #00000080;
+        transition: background-position 0.5s ease-in-out;
+        z-index: -1;
+    }
+
+}
+
+
+.about {
+    min-height: 60vh;
+}
+
+.skills {
+    background-color: $mountain-blue-50;
+    min-height: 60vh;
+    &::before {
+        content: "";
+        background-image: url("../../assets/images/background-mountains2.png");
+        background-size: cover;
+        background-position: right;
+        opacity: 0.5;
+        box-shadow: inset 0 0 0 500px #00000080;
+        transition: background-position 0.5s ease-in-out;
+        z-index: -1;
+    }
+}
+
+.journeys {
+    min-height: 60vh;
+}

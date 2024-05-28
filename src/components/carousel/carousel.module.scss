@@ -1,0 +1,36 @@
+@import 'styles/partials/variables';
+
+.carousel {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    overflow-x: auto;
+    padding-bottom: 3rem;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+        background-color: $mountain-blue-75;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: $sunrise-yellow;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.carouselItem {
+    scroll-snap-align: center;
+    figure {
+        img {
+            width: 280px;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+}

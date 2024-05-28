@@ -1,0 +1,662 @@
+[
+  {
+    "id": 1,
+    "title": "IOT Project",
+    "subject": "Orientation project 1",
+    "datetime": "2021-02-02T14:00:00Z",
+    "context": "A project to find out what field of study sparks our interests.",
+    "introduction": "With a Team of 4 we created a device that can both accept and transmit infra-red signals. The device can operate like a TV remote and mimic its functionality originating from other sources.",
+    "tags": [
+      "C++",
+      "IOT",
+      "ESP32",
+      "Apache ",
+      "MQTT",
+      "Team"
+    ],
+    "texts":
+    [
+      "We started with wiring the compact ESP32 computers to allow us to connect to wi-fi and operate the IR-LED. The device can both receive and transmit IR signals of the decoded wavelength attained from an Optical Spectrum Analyzer.",
+      "Next a web interface is created to control the device over wi-fi. Using the MQTT protocol, sending lightweight payloads to IOT devices. With Apache   we hosted a Mosquitto broker service.",
+      "In C++ the right pins and variables are initialized to read and write to the IR and receive data over wi-fi. Sanity checks are inserted and wait times to mitigate double signal receival."
+    ],
+    "summary": "wiring and coding a mini computer to receive signals from infra-red and data over wi-fi to control a TV.",
+    "learned": [
+      "Coding in C++ programming language.",
+      "Wiring up IR components to a mini computer.",
+      "Using machine to machine messaging protocol."
+    ],
+    "imageLinks": [
+      "IOT_project_wavemeter.jpg"
+
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Cloud and cybersecurity project",
+    "subject": "Orientation project 2",
+    "datetime": "2021-05-30T09:00:27+03:00",
+    "context": "A project to find out what field of study sparks our interests.",
+    "introduction": "With a Team of 4 we set up a camera network. Getting camera feeds from in house, cross network, and public cameras.",
+    "tags": [
+      "Networking",
+      "Security",
+      "Firebox",
+      "Routing",
+      "Switching",
+      "Topologies",
+      "Vlans",
+      "Trello",
+      "Backups",
+      "PacketTracer",
+      "CronJob",
+      "Team"
+    ],
+    "texts":
+    [
+      "We started with dividing tasks in the team, the tasks at hand were: Setup a router with the needed security. Configure a switch with the different networks. A server to back up, preview data and push it to the cloud. And the cameras in the different networks.",
+      "Via Trello tasks were divided into cards for an MVP. My task being initially setting up the topology. Using PacketTracer to draw the different connections over the networks in Vlans. Then setting up the external network camera, connecting and allowing it to our internal network. Later helping on security configuration on the firebox router. Finally, debugging OS setup of the server and automating backups with CronJobs.",
+      "Throughout the project stand up meetings were performed every working day. A selected chairman governed the meeting and asks every member what goals were achieved and what is planned on the current day. The chairman switched from person every day.",
+      "While suffering some setbacks in the project, mainly with the server. A big learning aspect was interconnecting a full topology through vlans. We learned better to communicated earlier on in a project to adjust to each other modules."
+    ],
+    "summary": "Realized a proper camera network with the possibility of local and cloud backups, complete with basic security.",
+    "learned": [
+      "Teamwork and communication.",
+      "Kanban working method.",
+      "Connecting networks and their devices."
+    ],
+    "imageLinks": [
+      "CCS_project_Camera_setup.jpg",
+      "CCS_project_switch_and_firebox.jpg",
+      "CSS_project_Firebox_and_interface.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Personal website (year 1 Thomas More)",
+    "subject": "Webdesign Essentials",
+    "datetime": "2021-05-10T13:00:00+03:00",
+    "context": "Building my first website with HTML and CSS.",
+    "introduction": "Learning how to work with the basic web design elements.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "Web images",
+      "Bootstrap",
+      "Fonts",
+      "Git"
+    ],
+    "texts":
+    [
+      "Getting step by step lessons in HTML building a website layout complete with the required tags setup. Using the recommended links and meta information.",
+      "Later adding custom styling with CSS to the pages through another step by step guide into the possible customizations. Splitting up styling into different files to uphold maintainability standards. Build dynamic and responsive web pages by using media queries and keyframe animations.",
+      "Finalizing layouting pages by using Bootstrap and its column-row framework. A single page is outfitted with 4 different styles giving each a unique look and identity. Fonts beautify texts to further customize the styling of each page.",
+      "The whole process is backed up by a GitHub repository. Version control and committing changes allows for easy monitoring of changed code or possibility of rolling back to previous states."
+    ],
+    "summary": "Building my first website styled with CSS and Bootstrap connected with a Git repository.",
+    "learned": [
+      "HTML and its tags.",
+      "CSS its customization.",
+      "Web image sizes and aspect ratios.",
+      "Importing and using fonts and Bootstrap.",
+      "Basis of Git work flow."
+    ],
+    "imageLinks": [
+      "first_website_homepage.png",
+      "first_website_alt_styling_nature.png",
+      "first_website_alt_styling_kids.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Group website (year 1 Thomas More)",
+    "subject": "Webdesign Advanced",
+    "datetime": "2021-06-16T16:30:17+03:00",
+    "context": "Build basic website in a team with Git work flow.",
+    "introduction": "In a team of 3 learn the Git  work flow building a website with emphasis on bootstrap and basic JavaScript functionality.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Jquery",
+      "Bootstrap",
+      "Git",
+      "Trello",
+      "Team"
+    ],
+    "texts":
+    [
+      "Allowing to select our own subject, theme styling, and colours, we divided our pages and their functionalities. Selecting the subject \"running for dummies\" I was in charge of the pages about stretching and a conceptual store.",
+      "In the stretching page a fixed navigation element that smoothly scrolls to the selected section. The store page has selectable shoes to \"add\" to your cart, and clear that cart.",
+      "My work also included the landing page. A scrollspy to have a running man at the top of the page that walks across based on scroll depth. Along with collapsing sections and image carousels with controls.",
+      "With the changes to the landing page we learned to mitigate and fix merge errors in GitHub. With version control we were allowed to continue, change, and build from others's templates."
+    ],
+    "summary": "Style, theme and style a website with JavaScript functionality in a team. while using the Git  work flow and fixing merge errors.",
+    "learned": [
+      "JavaScript events and DOM manipulation.",
+      "Colour and template theming.",
+      "Git  work flow in a team.",
+      "Library/Component integration."
+    ],
+    "imageLinks": [
+      "group_website_homepage.png",
+      "group_website_darkend_page.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Web-scraper",
+    "subject": "DevOps & Security",
+    "datetime": "2021-12-20T00:00:10+02:00",
+    "context": "Web-scraper console application with GitHub-actions pipeline.",
+    "introduction": "Build a Console driven web-scraper with C# and Selenium, The project made accesible via GitHub-actions CI/CD pipeline.",
+    "tags": [
+      "C#",
+      "Selenium",
+      "Git",
+      "GitHub-actions",
+      "CI/CD",
+      "SQL",
+      ".NET",
+      ".NET framework",
+      "Micro ORM",
+      "XPath"
+    ],
+    "texts":
+    [
+      "Initially the coding environment with additional packages are installed. The selenium ChromeDriver allows for console based web browsing.",
+      "Through the selection of XPaths elements on the web-pages, elements are selected to navigate, fill form fields, and accept pop-ups. Like this the websites are traversed and the scrapeable elements are retrieved.",
+      "The Driver is initialized with the needed options and set to the specific destination web page. The wanted inputs are presented in the console and passed to the web-scraper for use.",
+      "With a micro ORM (Object-relational mapping) a small database is initialized with tables. The scraped results are mapped to objects to be able to insert into the database. A connection is opened to the database and with SQL inserts added into the tables.",
+      "A GitHub artifact is created to download the zipped console application locally. When a push is performed in the repository the CI/CD pipeline triggers and uses the yaml file to build and publish the application.",
+      "During the project I needed to upgrade my .NET framework from 4.8 to 5.0 which had to happen manually."
+    ],
+    "summary": "A C# console web-scraper writes items with an ORM and a GitHub-actions CI/CD pipeline puslishes the application for download.",
+    "learned": [
+      "C# programming.",
+      "ORM mapping.",
+      "Selenium webscraping.",
+      "Yaml files and structure.",
+      "CI/CD"
+    ],
+    "imageLinks": [
+      "webscraper_sql.png",
+      "webscraper_database_creation.png"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "PhotoShop",
+    "subject": "Webdesign Essentials",
+    "datetime": "2021-01-11T13:00:10+02:00",
+    "context": "Learn the basics of PhotoShop.",
+    "introduction": "Make a fictional web business that incorporates elements from PhotoShop.",
+    "tags": [
+      "PhotoShop",
+      "Web images",
+      "SVG",
+      "Aspect ratio",
+      "Domains"
+    ],
+    "texts":
+    [
+      "To create a website I first checked that the name of the company still has a domain name available for purchase. This is both checked for the .be domain and the .com domain. The name of my company is \"TimTints\" that specializes in professional miniature model painting on demand.",
+      "A colour theme is selected by taking in the products we want to sell and getting a colour scheme with PhotoShop tools. This theme is represented with a colour pickable photo where the scheme originated from.",
+      "The logo is drafted and outlined with vector points to turn into an SVG. The SVG includes text, colours, and elements that are incorporated into one SVG that is up to web spec.",
+      "Lastly a combination of images are smoothly combined into one by removing background items and cleaning up quality. This represents the website banner that gives a content overview complete with the SVG logo."
+    ],
+    "summary": "Use PhotoShop techniques to create web appropriate images, transform elements into SVGs, and automate colour theme selections.",
+    "learned": [
+      "PhotoShop basics.",
+      "Image cleanup and adjustment.",
+      "Selecting aspect ratios.",
+      "Converting to SVG.",
+      "Subscribe to domain names."
+    ],
+    "imageLinks": [
+      "photoshop_cover_photo.jpg",
+      "photoshop_color_pallet.png"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Python coursing",
+    "subject": "Professional Skills 2",
+    "datetime": "2022-04-21T10:20:10+03:00",
+    "context": "Teach a class of students about an IT topic.",
+    "introduction": "Prepare and teach Python to a class of high school students.",
+    "tags": [
+      "Python",
+      "Coursing",
+      "Team",
+      "Client"
+    ],
+    "texts":
+    [
+      "A high school teacher as our client wants us to give a workshop surrounding an introduction on an IT topic. Our choice is the basics of programming through Python.",
+      "We communicate a time, location, and amount of students to prepare our course content on. With a PowerPoint we show off how to program in Python with examples and tasks.",
+      "In a Python coding web interface the students are able to have a program environment without the need of installing an IDE. The PowerPoint is hosted online were one can download it.",
+      "First we go over what Python is and the console, how to define variables and print to the console, how to do basic calculations, and use user inputs. In the next chapter we go over comparisons, if-else blocks, and nesting of code. The last chapter we teach loops, index and random number generation.",
+      "Each chapter has a point to experiment with the learned topics. After the course there is enough knowledge to create little games.",
+      "Finally there is some extra information on lists, string mutation and functions for the very interested students.",
+      "The students and the teacher gave scoring and feedback on the coursing as a whole."
+    ],
+    "summary": "Provide, communicate, and teach high school students the basics of Python programming. Increasing their knowledge with chapters and coding experiments.",
+    "learned": [
+      "Providing easy programming environments.",
+      "Client communication.",
+      "Knowledge sharing."
+    ],
+    "imageLinks": [
+      "python_coursing_introslide.jpg",
+      "python_coursing_classroom.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Tournament SQL database",
+    "subject": "Data Analysis with SQL",
+    "datetime": "2021-06-14T13:00:10+03:00",
+    "context": "Build a database and query data from it.",
+    "introduction": "Fill a boardgame tournament database with tables and data, then query that data.",
+    "tags": [
+      "SQL",
+      "UML",
+      "ERD",
+      "Queries"
+    ],
+    "texts":
+    [
+      "I build a custom tournament database for my local boardgame store. The database allows the creation of tournaments with matches of 2 players versus each other. All requirements for the players is present like table numbers, model armies, game tools and missions.",
+      "The schema is created and the tables are defined and created with the right foreign keys and relations. Then the data is inserted, Players are added with their tools, missions, and armies that are defined per squad and their models.",
+      "As a test case, different type of queries are performed. Beginning with WHERE clauses, scalar functions, and set functions. Later tables data is connected through relationships with JOIN statements,  sub-queries, and correlated  sub-queries."
+    ],
+    "summary": "Creating a schema with tables and relations set between them. Then Perform a set of queries on the data as test case.",
+    "learned": [
+      "ERD creation",
+      "UML basics.",
+      "SQL queries.",
+      "Relational mapping of database tables.",
+      "Inserting data with SQL."
+    ],
+    "imageLinks": [
+        "SQL_project_erd.png",
+        "SQL_database_mysql.png"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Visualize Sustainable Development Goals data",
+    "subject": "Data Visualisation",
+    "datetime": "2022-05-10T00:00:10+03:00",
+    "context": "Visually dashboard a data-set data.",
+    "introduction": "Use Qlick to visualize data from the \"Sustainable Development Goals\" database.",
+    "tags": [
+      "Qlick",
+      "Database",
+      "Dashboarding"
+    ],
+    "texts":
+    [
+      "The topics visualized are slums and unemployment. The data as first cleaned and filtered with set expressions and distinct selections to avoid duplicates.",
+      "Different types of charts are used to display the different type of data. Percentages are shown of the slums in the world. KPIs show the selected region amount and the original global total.",
+      "Line and bar charts visualize the unemployment percenatge through the years and show if there is correlation to lower incomes and countries their financial help plans.",
+      "The dashboards are all complete with drill-downs to see values per year if a region is selected. Components contain interactive world map navigation, navigation elements to move to other sheets, remove all selections, and visual colours with images.",
+      "Filtering the data-set itself is the hardest part. After cleaning and filtering of data the visualizations are rather easy to set up. Sheets are set up with a theme and a storyboard flow. "
+    ],
+    "summary": "Filter the data-set and provide graphically and accurate visualizations. Select and use different types of graphs to best describe the background data.",
+    "learned": [
+      "Qlick sense.",
+      "Data-set manipulation.",
+      "Propper graph selection.",
+      "Theming and storyboarding.",
+      "Use of set expressions."
+    ],
+    "imageLinks": [
+      "Qlick_dashboard_home.png",
+      "Qlick_dashboard_selections.png"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Alumni evening project",
+    "subject": "Requirements analysis",
+    "datetime": "2022-02-01T00:00:10+02:00",
+    "context": "Formulate a requirement analysis, wireframe, and mock ups of a project.",
+    "introduction": "Prepare the requirements analysis for creating an Alumni evening project, weighing of (non)functional requirements and creating wireframes.",
+    "tags": [
+      "UML",
+      "MoSCoW",
+      "Wireframing",
+      "Usecase",
+      "User stories",
+      "Client",
+      "Axure",
+      "Team"
+    ],
+    "texts":
+    [
+      "Analyzing a client project description and setting up a requirement list, and formulate user stories together in consultation with the client. The client wants an easy to use interface to plan and manage an Alumni evening complete with booking, mailing, and authentication.",
+      "We weigh down each requirement into a MoSCoW to see which features are most needed and which are optional. A use-case diagram is created with the actors and actions.",
+      "Each functional and non functional requirement is completed with a wireframe and Axure prototype. User stories have preconditions, normal flows, alternative flows, and the prototype screens.",
+      "During analysis multiple meetings are setup with the client to go over project breakdown and interpretation to steer it into the right direction."
+    ],
+    "summary": "Set up full requirement analysis to prepare an Alumni evening project from client info and feedback.",
+    "learned": [
+      "Prioritize project features.",
+      "Working with UML for use cases.",
+      "Formulating user stories.",
+      "Creating wireframes and prototypes.",
+      "Client communication."
+    ],
+    "imageLinks": [
+      "Alumni_usecase.png",
+      "Alumni_prototype.png"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Re-minder alzheimer planner",
+    "subject": "Project PHP",
+    "datetime": "2022-05-23T13:45:00+03:00",
+    "context": "Build a PHP website based on a requirements document.",
+    "introduction": "Develop an automated planning system for alzheimer patients for both the patient and caretakers in PHP.",
+    "tags": [
+      "PHP",
+      "Laravel ",
+      "Hosting",
+      "SQL",
+      "Team",
+      "MoSCoW",
+      "Usecase",
+      "User stories",
+      "Client",
+      "Sprints",
+      "Agile",
+      "Git",
+      "Team"
+    ],
+    "texts":
+    [
+      "Based on multiple requirement analysis documents we reworked it with all features merged into a single one. Re-evaluating feature priority and implementation possibility.",
+      "My part of the project mainly involves the logbook of patients and caretakers. Here daily taks or events can be bound to a log and tasks can be marked as done. Caretakers can check tasks or events. and an automated reminder notifies the assigned person if important tasks have not been completed.",
+      "Logs are queried from the controller via a service layer. Authentication verifies that it is the right user. Validation and restraints change what function a patient can make within their authority.",
+      "Additionally I helped out in the creation of authentication in middleware and pair programed logic for questionaires.",
+      "Changes and updates are communicated with the client. The client requests changes or steers requirements into the right direction. With the feedback the adjustments are implemented."
+    ],
+    "summary": "Analyse and program the logging, authority and validation of a planning application for alzheimer patients and caretakes. Done in PHP with an Agile approach.",
+    "learned": [
+      "Working with the laravel framework.",
+      "Programming in PHP.",
+      "Using services.",
+      "Propper pair programming."
+    ],
+    "imageLinks": [
+      "Reminder_erd.png",
+      "Reminder_UI.jpg"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Flutter",
+    "subject": "Augmented Reality and Mobile App Development ",
+    "datetime": "2022-11-04T00:00:32+02:00",
+    "context": "Make a Flutter AR application with Wikitude.",
+    "introduction": "In a team of 2, program an AR application where you can scan programming logos and get their information.",
+    "tags": [
+      "Flutter",
+      "Wikitude",
+      "AR",
+      "Team",
+      "API",
+      "JsonServer"
+    ],
+    "texts":
+    [
+      "With Flutter we create a native android application that uses the mobile device its components. Together with the Wikitude AR library we create an application that lets you scan a popular programming logo with your camera and get relevant information.",
+      "In Flutter the components are made so the app has a modular setup. Each page contains its own information and functionality. A user can scan a programming logo an it is automatically saved in the list of \"discovered\" logos.",
+      "The app is also completed with JavaScript to control the Wikitude functionality and query the Json database. Scanning a logo give you the developer of the programming language and some popular framework built with it.",
+      "Under a scanned or saved logo the user can also give custom comments that gets saved to the database and a link to the languages documentation."
+    ],
+    "summary": "Build an AR Flutter application powered by Wikitude to scan programming logos with a phone camera and retrieve related information and documentation.",
+    "learned": [
+      "Programming with Flutter.",
+      "Using mobile device components.",
+      "Implementing and working atop libraries.",
+      "Json server database."
+    ],
+    "aspectRatio": "3 / 4",
+    "imageLinks": [
+      "flutter_edit_info.jpg",
+      "flutter_home.png",
+      "flutter_info_page.jpg"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Movie browser",
+    "subject": "Angular",
+    "datetime": "2022-11-25T22:00:32+02:00",
+    "context": "Query and show movies from a public database with Angular.",
+    "introduction": "Retrieve data from the open source movie database and save movies in a watched list through a Java back-end.",
+    "tags": [
+      "Angular",
+      "API",
+      "Database",
+      "Routing",
+      "JavaScript",
+      "Json",
+      "Java",
+      "REST",
+      "Tailwind"
+    ],
+    "texts":
+    [
+      "First I have selected an open source movie database that returns the right data for consumption. These movies are then queried and returned in Json format.",
+      "The website has an opening page that lists the movies per category. A search page allows the user to search for movies themselves optionally filtering by year.",
+      "The \"personal\" page lists the saved movies of the user which they can see the year and global voted rating of. From any place one can remove or add a movie to the liked list.",
+      "Details of a movie shows its description. Also the user can give the movie a personal comment and rating and select that they have watched the movie.",
+      "In the background everything is queried and subscribed to by the use of services to separate the logic from the components. The pages are lazily loaded so the resources are only loaded in if needed.",
+      "The custom list of saved movies is handled by a Java back-end to add, edit and delete movies to a local database with REST API calls."
+    ],
+    "summary": "Created a movie browsing website that allows saving of movies to a personal list created with Angular. Also a Java REST API handling the locally saved movies.",
+    "learned": [
+      "Angular routing.",
+      "Querying from external databases.",
+      "Component based web design.",
+      "Using a Java REST API back-end."
+    ],
+    "imageLinks": [
+      "Angular_movie_home.png",
+      "Angular_movie-search.png"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Betting application",
+    "subject": "Angular",
+    "datetime": "2022-12-14T00:00:32+02:00",
+    "context": "In a team of 5, create a cross-company betting application in Angular and a custom back-end.",
+    "introduction": "Make a betting application that can separate users in groups, updates games, and scores live completed with a C# back-end.",
+    "tags": [
+      "Angular",
+      "C#",
+      "Routing",
+      "Queries",
+      "API",
+      "REST",
+      "Auth",
+      "Team",
+      "Tailwind",
+      "Client"
+    ],
+    "texts":
+    [
+      "You can login to join the platform and if invited join a company group. A user can create a company and become the company admin who can create events and game groups for that company. Their settings can be edited on their profile page.",
+      "The Project is complete with authentication, URL guards for validation, security, and error handling pages. Data is fetched through REST APIs from the .NET back-end that manages the database to allow for consistency and management of data.",
+      "Based on requirements of the client we analyze the project needs and construct a list of the prioritized features. In consultation with the client we adjust the model to suit their needs and clear up feature interpretation.",
+      "Finally we present our application to a wide audience including other product owners. In a friendly competition with other groups for the most good looking and complete product, our strong team achieved second place."
+    ],
+    "summary": "Develop a secure betting application for games, events and managing users. Created in Angular as a front-end and .NET as a back-end",
+    "learned": [
+      "Presenting for an audience."
+    ],
+    "imageLinks": [
+      "Angular_betting_places.png",
+      "Angular_betting_profile.png"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "E-commerce Webshop",
+    "subject": "Project 4.0",
+    "datetime": "2022-12-20T15:00:32+02:00",
+    "context": "Concept, plan, investigate, and realize a cloud hosted E-commerce web shop. With payment, content management, and search optimization.",
+    "introduction": "In a team of 5, setup a requirement analysis and create an E-commerce web shop in NextJS linked with Contentful, Adyen payments, and Algolia search optimization. Controlled by a Java SpringBoot back-end.",
+    "tags": [
+      "NextJS",
+      "Java",
+      "SpringBoot",
+      "Adyen",
+      "Contentful",
+      "Team",
+      "Client",
+      "API",
+      "Unit Tests",
+      "Database",
+      "Git",
+      "Queries",
+      "REST",
+      "Sprints",
+      "ERD",
+      "UML",
+      "Usecase"
+    ],
+    "texts":
+    [
+      "We formed a team of 5 coming from different fields of study. The product owner researches new technologies for E-commerce web shops with a wide range of technologies. Together with their requests we brainstorm an ideal solution incorporating the MACH stack, meaning: micro services, API driven, Cloud hosted, and headless setup.",
+      "Concepting our product involves researching for the best suitable technologies and weighing them against each other. The project owners give feedback from internal knowledge per chosen technology.",
+      "During planning of the web stack technologies and hosting plan we selected NextJS as our front-end that has easy support for static page rendering. Java SpringBoot as the back-end for REST API control of data. Contentful as a repository to handle data and media. And Algolia for search functionality and optimization.",
+      "After setting out our goals we start the learning phase to deep dive into our subjects and enrich the knowledge we have on them. Here we prototype the compatibility and high level aspects of each subject.",
+      "During realization we sit together to create the web shop dividing tasks to the right person. I focused on the Java SpringBoot back-end to connect it to the Contentful data and Manage it via restful API calls. Also supporting the front-end in the querying and updating of data.",
+      "A major task is implementing the Adyen payment system. This allows customers to play by credit card online complete with security and forwarding to 3rd party software. The Java back-end is complete with Unit testing with Mockito.",
+      "With the sprints done we showcase our product to the product owner. We show our strengths and weaknesses during production and how we communicated to have the whole flow of the project as one success.",
+      "After some setbacks with the implementation of Adyen and a slow start in the front-end we mainly focused on the learning aspects of the project. Gaining a lot of information in Java and working with 3rd party software. The project is not that feature rich, but our knowledge has greatly increased by closely working together with the project coaches and professional developers."
+    ],
+    "summary": "Going over phases to grow the project with carefully selecting the right technologies. Producing an E-commerce web shop build with NextJS and Java SpringBoot. Integrate Adyen and Contentful as 3rd party software learning from professional developers.",
+    "learned": [
+      "Java SpringBoot annotations.",
+      "Advanced Restful API.",
+      "Mockito unit testing.",
+      "Implementing 3rd party software.",
+      "Cross specialization team communication.",
+      "Client presenting and demoing.",
+      "Selecting the right technologies."
+    ],
+    "imageLinks": [
+      "project40_Team.jpg",
+      "project40_workspace.png"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "NMBS hackaton",
+    "subject": "Hackaton",
+    "datetime": "2022-04-30T13:30:32+03:00",
+    "context": "Analyze and prototype a solution for a country spreading Client.",
+    "introduction": "In a team of 4, brainstorm a digital solution for the Belgian railway service.",
+    "tags": [
+      "Axure",
+      "Client",
+      "Team",
+      "Sprints",
+      "User stories",
+      "Prototype",
+      "Value chain"
+    ],
+    "texts":
+    [
+      "The Belgian railways wants innovative ideas to solve problems and make the lives easier for employees and travelers using their services. From multiple topics we have chosen the topic to ease lost and found handling and reporting.",
+      "In sprints of an hour length we start brainstorming different uses and possibilities of tackling such problem. Then we define the target audience of this problem and what it would mean to them when the problem is handled. Later we weighed down what resources it uses and which burdens it takes away.",
+      "When the idea is set we created a prototype in Axure as a proof of concept. Our solution makes it able to photograph the lost item with a mobile device and give in the railway carriage number. The conductor of a vehicle gets notified and can drop off the item at a desired station. A user can report that they lost an item with description and have higher chances to get a response for pickup.",
+      "This would solve items being left behind on railway carriages ending up far from its origin point. This will also increase customer satisfaction. The project can be added to the official application as a functionality to increase its user base.",
+      "After completion of the idea we compete against other groups in a friendly manner, covering our out of the box thinking, quality improvements, and presentation."
+    ],
+    "summary": "Analyze and Prototype a digital solution for lost and found items in the Belgian railways. Competing against other groups and their ideas.",
+    "learned": [
+      "Creating a project from client needs.",
+      "Communication with a team to work hard deadlines.",
+      "Presenting for an audience."
+    ],
+    "imageLinks": [
+      "nmbs_hackaton_planning.png",
+      "nmbs_hackaton_intro.jpg"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "ITF hacktory",
+    "subject": "Hackaton",
+    "datetime": "2021-12-09T23:40:32+02:00",
+    "context": "Create a sustainable game to spark ecological awareness.",
+    "introduction": "In a team of 4, brainstorm a board game to make kids more aware of sorting garbage and its impact.",
+    "tags": [
+      "Client",
+      "Team",
+      "Sprints",
+      "User stories",
+      "Prototype",
+      "Value chain"
+    ],
+    "texts":
+    [
+      "An ecological board game-part creator shares their vision and challenges us to create a sustainable and informative board game for a specific age group. Working together online our target age group is younger kids to learn them more about sorting in a fun and team driven game.",
+      "We developed our ideas in sprints. First thinking of our target audience and what would be required to intrigue them into the game. Then we searched for the resources and approximate price of the game. Then create a prototype that we can play ourselves to get a feel and adjust accordingly.",
+      "With the project complete we pitched our ideas to the jury competing against other groups in a friendly manner. Our idea involves a garbage monster trowing garbage at the players need to recycle them into the right bins to stop its pollution."
+    ],
+    "summary": "Conceptualize and prototype a board game for a younger audience to give them insight into recycling in an engaging manner.",
+    "learned": [
+      "Concepting an idea with given resources.",
+      "Develop based on a target audience.",
+      "Working together remotely."
+    ],
+    "imageLinks": [
+      "IThacktory_team.jpg",
+      "IThacktory_game_pieces.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "AI mini projects",
+    "subject": "Artificial Intelligence",
+    "datetime": "2022-01-10T11:30:32+02:00",
+    "context": "3 different AI projects of varying topics.",
+    "introduction": "Introduction to AI in Python with the topics: Artificial intelligence, machine learning, and neural networks",
+    "tags": [
+      "AI",
+      "Python",
+      "Machine learning",
+      "Deep learning",
+      "Neural networks",
+      "Image recognition",
+      "Selenium"
+    ],
+    "texts":
+    [
+      "Starting of with an introduction to artificial intelligence in Python, I created a puzzle  were sets of letters can be deciphered into words based on graph-search algorithms, with constraints, and dynamic inputs. 3 sets of letters correspond to 3 sets of word respectively.",
+      "The second project covers machine learning by collecting data from a data set and creating a sorting algorithm. The data is split into a test and train set, to teach that algorithm how to sort and test where its margin of error lies. The sorted date is plotted into a graph and different algorithms are test set on the data set like: linear regression, random forest regression, and extra trees regression.",
+      "The last project involves neural networks focusing on image recognition. 5 categories of images web scraped with selenium and fed into the neural network. The network is build of different filter, shape and input layers called convolution layers. The data is split in a test and train set and trained to recognize the topic based on an external image."
+    ],
+    "summary": "Create projects with Python in the different aspects of artificial intelligence from graph search algorithms to custom image search algorithms, and custom neural networks.",
+    "learned": [
+      "Knowing the uses of AI.",
+      "Automated filtering of data sets.",
+      "How AI is powered."
+    ],
+    "imageLinks": [
+      "AI_crypto_puzzle.png",
+      "AI_algorithm.png",
+      "AI_image_recognition.jpg"
+    ]
+  }
+]

@@ -7,26 +7,48 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-flow: column nowrap;
     height: 100vh;
     height: 100dvh;
+    overflow-x: hidden;
+}
+main {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 h1, h2, h3 , h4, h5, h6, p, a {
     font-family: 'Oswald', sans-serif;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    line-height: 1.2em;
+    svg {
+        margin-left: 0.25em;
+        margin-right: 0.25em;
+        font-size: 1.3em;
+    }
 }
 
 *.mountain-blue {
-    background-color: $mountain-blue;
+    background-color: $mountain-blue-75;
 
     h1, h2 {
         color: $sunrise-yellow;
+        svg {
+            fill: $sunrise-yellow;
+        }
     }
     h3, h4, h5, h6 {
         color: $misty-white;
+        svg {
+            fill: $misty-white;
+        }
     }
     p, a {
         color: $misty-white;
@@ -35,47 +57,56 @@ h1, h2, h3 , h4, h5, h6, p, a {
 
 h1 {
     color: $mountain-blue;
-    font-size: clamp(48px, 4vw, 64px);
+    font-size: clamp(48px, $scale-property, 64px);
     font-weight: 700;
-    height: 1.5em;
+    svg {
+        fill: $mountain-blue;
+    }
 }
 h2 {
     color: $mountain-blue;
-    font-size: clamp(32px, 4vw, 48px);
+    font-size: clamp(32px, $scale-property, 48px);
     font-weight: 600;
-    height: 1.5em;
+    svg {
+        fill: $mountain-blue;
+    }
 }
 h3 {
     color: $off-black;
-    font-size: clamp(24px, 4vw, 32px);
+    font-size: clamp(24px, $scale-property, 32px);
     font-weight: 500;
-    height: 1.5em;
+    svg {
+        fill: $off-black;
+    }
 }
 h4 {
     color: $off-black;
-    font-size: clamp(24px, 4vw, 32px);
+    font-size: clamp(24px, $scale-property, 32px);
     font-weight: 400;
-    height: 1.5em;
+    svg {
+        fill: $off-black;
+    }
 }
 h5 {
     color: $off-black;
-    font-size: clamp(16px, 4vw, 24px);
+    font-size: clamp(16px, $scale-property, 24px);
     font-weight: 500;
-    height: 1.5em;
+    svg {
+        fill: $off-black;
+    }
 }
 h6 {
     color: $off-black;
-    font-size: clamp(16px, 4vw, 24px);
+    font-size: clamp(16px, $scale-property, 24px);
     font-weight: 400;
-    height: 1.5em;
+    svg {
+        fill: $off-black;
+    }
 }
 
 p, a {
-    &.big {
-        font-size: clamp(24px, 4vw, 32px);
-    }
     color: $off-black;
-    font-size: clamp(16px, 4vw, 24px);
+    font-size: clamp(16px, $scale-property, 24px);
     font-weight: 300;
 
 }
@@ -87,4 +118,24 @@ a {
     &:hover {
         text-decoration: underline;
     }
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url("/assets/images/parchment-horizontal.JPG");
+    background-size: cover;
+    z-index: -1;
 }

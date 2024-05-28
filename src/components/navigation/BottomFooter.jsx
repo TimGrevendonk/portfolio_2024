@@ -3,7 +3,6 @@ import styles from "components/navigation/bottomFooter.module.scss";
 
 // BottomFooter function:
 export function BottomFooter({ ...props }) {
-    console.log('[Debug bottomFooter] rendered:', { props })
 
     return (
         <footer className={styles.footer}>
