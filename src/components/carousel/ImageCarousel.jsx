@@ -1,20 +1,30 @@
+import { useRef, useEffect } from 'react';
 import styles from "components/carousel/carousel.module.scss";
 
 // ImageCarousel function:
 export function ImageCarousel({ ...props }) {
-    // const scollBody = document.getElementById("workcarousel").scrollLeft += 1;
-    // const scollAmount = document.getElementsByClassName("carouselItem")[0]
+    const carouselRef = useRef(null); 
+    // let scrolledAmount = 0;
     
-    (function scoll(params) {
-        setInterval(() => {
-            document.getElementById("workcarousel").scrollLeft += 240;
-            // document.getElementsByClassName("carouselItem")[0]
-        }, 2000);  
-    })();
+    // function scroll() {
+    //     setInterval(() => {
+    //         console.log(carouselRef.current.children[0].clientWidth);
+    //         carouselRef.current.scrollTo({
+    //             left: scrolledAmount <= (carouselRef.current.children[0].clientWidth * carouselRef.current.children.length) ? scrolledAmount += carouselRef.current.children[0].clientWidth : scrolledAmount = 0,
+    //             behavior: 'smooth'
+    //         });
+    //     }, 3000);
+    // };
 
+    // useEffect(() => {
+    //     if (carouselRef.current) {
+    //         scroll();
+    //     }
+    // });
+    
     return (
-        <div id="workcarousel" className={styles.carousel} >
-            {props.children}
+        <div ref={carouselRef} id="workscarousel" className={styles.carousel} >
+                {props.children}
         </div>
     );
 }

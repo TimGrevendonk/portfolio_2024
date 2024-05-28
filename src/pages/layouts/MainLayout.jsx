@@ -7,13 +7,6 @@ import styles from "pages/layouts/mainLayout.module.scss";
 
 // Layout function:
 export function MainLayout({ ...props }) {
-    const worksRef = useRef(null)
-
-    const scrollToSection = () => {
-        if (sectionRef.current) {
-          sectionRef.current.scrollIntoView({ behavior: 'smooth' });
-        }
-      };
 
     return (
             <div className={styles.contentContainer}>

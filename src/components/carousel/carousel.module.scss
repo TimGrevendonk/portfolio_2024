@@ -2,11 +2,12 @@
 
 .carousel {
     display: flex;
-    flex-flow: row nowrap;
-    width: 100vw;
+    width: 100%; 
     overflow-x: auto;
     padding-bottom: 3rem;
     scroll-snap-type: x mandatory;
+    align-items: center;
+    overflow-y: hidden;
 
     &::-webkit-scrollbar {
         background-color: $mountain-blue-75;
@@ -21,16 +22,42 @@
             cursor: pointer;
         }
     }
-    
+
 }
 
 .carouselItem {
-    scroll-snap-align: center;
+    &:nth-child(odd) {
+        .headers:first-child {
+            visibility: hidden;
+        }
+    }
+    &:nth-child(even) {
+        .headers:last-child {
+            visibility: hidden;
+        }
+    }
+    scroll-snap-align: start;
+    .headers{
+        padding: 4px $page-padding 4px $page-padding;
+    }
     figure {
         img {
-            width: 280px;
-            height: 200px;
+            aspect-ratio: 4/3;
+            width: 540px;
+            transition: width 0.5s ease-in-out;
+            @media screen and (max-width: 600px){
+                width: 280px;
+            }
             object-fit: cover;
         }
     }
 }
+
+@keyframes slide {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -100%;
+    }
+  }

@@ -13,9 +13,11 @@ import styles from "pages/home/homePage.module.scss";
 
 // Home function:
 export function HomePage() {
-    const allProjects = projectsJSon;
-
-    
+    const images = require.context('../../assets/images', true);
+    const allProjectsShuffeled = projectsJSon
+        .map(value => ({ value, sort: Math.random() }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({ value }) => value);
 
     return (
         <>
@@ -47,16 +49,16 @@ export function HomePage() {
             </div>
         </section>
 
-        <section ref={worksRef} id="works" className={`${styles.works} mountain-blue`}>
+        <section id="works" className={`${styles.works} mountain-blue`}>
             <div className={styles.title}>
                 <h2><HomeRepairServiceOutlinedIcon />Works</h2>
                 <LinkButton path={"/projects"} size="small" endContent={<ArrowRightOutlinedIcon/>}>
                     All projects 
                 </LinkButton>
                 <ImageCarousel>
-                {allProjects.map((project, index) => {
+                {allProjectsShuffeled.map((project, index) => {
                     return (
-                        <ImageCarouselItem key={project.id} imageLinks={project.imageLinks}>
+                        <ImageCarouselItem key={project.id} project={project}>
 
                         </ImageCarouselItem>
                     );
@@ -72,7 +74,23 @@ export function HomePage() {
             <div className={styles.title}>
                 <h2><BadgeOutlinedIcon/>About</h2>
             </div>
-            <p>Some text to read</p>
+            <article>
+                <div>
+                    <h3>This is me</h3>
+                    <p>Een grote lange Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto esse exercitationem quae ut minus quam est corporis optio, veniam consequuntur qui. Earum animi voluptatem, deserunt veniam totam quisquam repudiandae in.</p>
+                    <p>Een grote lange Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto esse exercitationem quae ut minus quam est corporis optio, veniam consequuntur qui. Earum animi voluptatem, deserunt veniam totam quisquam repudiandae in.</p>
+                    <p>Een grote lange Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto esse exercitationem quae ut minus quam est corporis optio, veniam consequuntur qui. Earum animi voluptatem, deserunt veniam totam quisquam repudiandae in.</p>
+                </div>
+                <div className={`${styles.carouselItem}`}>
+                    <figure>
+                        <img src={images(`./${"mediacafe-me 1.png"}`)} alt="imag" />
+                    </figure>
+                    <div className={styles.headers}>
+                        <h3>This is me</h3>
+                        <p>Helloz?</p>
+                    </div>
+                </div>
+            </article>
         </section>
 
         <section id="skills" className={`${styles.skills} mountain-blue`}>

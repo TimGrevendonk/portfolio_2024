@@ -71,7 +71,8 @@
 
 .works {
     background-color: $mountain-blue-50;
-    min-height: 60vh;
+    height: max-content;
+    width: 100%;
     &::before {
         content: "";
         background-image: url("../../assets/images/background-mountains2.png");
@@ -87,7 +88,53 @@
 
 
 .about {
-    min-height: 60vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;   
+    
+    > * {
+        max-width: 1200px;
+        padding-bottom: 32px;
+    }
+
+    
+    article {
+        margin: auto $page-padding auto $page-padding;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between; 
+        width: 100%;
+
+        > div:first-child {
+            width: 45%;
+            p {
+                padding-bottom: 1rem;
+            }
+        }
+        > div:last-child {
+            width: 45%;
+        }
+
+        img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: right;
+        }
+
+        @media  (max-width: 600px) {
+            flex-flow: column nowrap;
+
+            > div:first-child {
+                width: 100%;
+            }
+            > div:last-child {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+            }
+        }
+    }
 }
 
 .skills {
