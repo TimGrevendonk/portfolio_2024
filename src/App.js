@@ -12,7 +12,7 @@ import 'styles/globals.scss';
 function App() {
   return (
     
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio_2024">
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<HomePage />} />
