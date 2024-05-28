@@ -86,9 +86,9 @@ export function HomePage() {
             <article>
                 <div>
                     <h3>Thats me</h3>
-                    <p className={styles.popout}>I'm a really invested person in doing it right. I would rather take a bit more time to do things thoroughly and learn everything there is to know along the way. Even if things arent part of my skills or learned knowledge I still challenge myself to get a feel for the knows hows, this way I work on my quality and contentness.</p>
-                    <p className={styles.popout}>Personaly I enjoy being around people who we can all share interests with. Sharing experiences, knowledge and good times!</p>
-                    <p className={styles.popout}>Besides learning the vast topics of the IT world I enjoy a good boardgame and a get-together. Or doing a nice activity fit for one and all like a good walk, folk games, or even something more action packed like my hobby airsofting.</p>
+                    <p className={"popout"}>I'm a really invested person in doing it right. I would rather take a bit more time to do things thoroughly and learn everything there is to know along the way. Even if things arent part of my skills or learned knowledge I still challenge myself to get a feel for the knows hows, this way I work on my quality and contentness.</p>
+                    <p className={"popout"}>Personaly I enjoy being around people who we can all share interests with. Sharing experiences, knowledge and good times!</p>
+                    <p className={"popout"}>Besides learning the vast topics of the IT world I enjoy a good boardgame and a get-together. Or doing a nice activity fit for one and all like a good walk, folk games, or even something more action packed like my hobby airsofting.</p>
                 </div>
                 <div className={`${styles.carouselItem}`}>
                     <figure>

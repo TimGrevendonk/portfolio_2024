@@ -140,3 +140,10 @@ section::before {
     background-size: cover;
     z-index: -1;
 }
+.popout {
+    transition: scale 0.3s ease-out;
+    &:hover, &:active{
+        transition: scale 0.1s ease-out;
+        scale: 1.02;
+    }
+}
