@@ -37,7 +37,7 @@ export function BottomFooter({ ...props }) {
                         path="/process"
                         startContent={<AccountTreeOutlinedIcon />}
                         >
-                            Process 
+                            design approach
                         </LinkText>
                     </li>
                 </ul>

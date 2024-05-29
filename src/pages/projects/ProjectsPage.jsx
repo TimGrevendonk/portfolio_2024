@@ -10,14 +10,20 @@ export function ProjectsPage() {
     return (
         <>
         <section className={styles.projectsList}>
-            <h2>All Projects</h2>
-            {allProjects.map(project => {
-                return ( 
-                    <Link key={project.id} to={`/projects/project/${project.id}`}>
-                        {project.id} {project.title} 
-                    </Link>
-                )
-            })}
+            <div>
+                <h2>All Projects</h2>
+                {allProjects.toReversed().map(project => {
+                    return (
+                        <Link
+                            key={project.id}
+                            to={`/projects/project/${project.id}`}
+                        >
+                            {project.title}
+                            <p>{project.summary}</p>
+                        </Link>
+                    )
+                })}
+            </div>
         </section>
         </>
     );

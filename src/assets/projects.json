@@ -660,5 +660,170 @@
       "AI_algorithm.png",
       "AI_image_recognition.jpg"
     ]
+  },
+  {
+    "id": 19,
+    "title": "useless web (individual)",
+    "subject": "Design 4",
+    "datetime": "2024-03-12T18:10:08.088+01:00",
+    "context": "Make a simple no function website with interactability.",
+    "introduction": "Create a website that has no function but is interactive.",
+    "tags": [
+      "HTML",
+      "JavaScript",
+      "Design"
+    ],
+    "texts":
+    [
+      "To get back into a basis of Javascript creat a little game with simple elements. The game should have a wel designed visual style.",
+      "brainstorm an idea from scretches, to rough works, and  finally a clean project."
+    ],
+    "summary": "A click based website to freshen up javascript.",
+    "learned": [
+      "javascript timeout control.",
+      "desing thinking"
+    ],
+    "imageLinks": [
+      "useless_web_game.jpg",
+      "useless_web_game_deflated.jpg"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "useless web (group)",
+    "subject": "Design 4",
+    "datetime": "2024-02-27T11:45:08.088+01:00",
+    "context": "Make a mix of non functional websites.",
+    "introduction": "In a group Create a 4 websites that have no function.",
+    "tags": [
+      "HTML",
+      "JavaScript",
+      "Design",
+      "Git"
+    ],
+    "texts":
+    [
+      "First we started off with giving eachoter ideas in the group. we listen to each idea no mater how simple.",
+      "Through scetching we layout what happens on the pages and how we can interact with the elements (or not).",
+      "One idea I worked on is a flying pigeon that poops when clicking on it or a button. here we have the pigeon ina an animation and must calculate the relative location to spawn a poop that falls to the ground.",
+      "We made it so the poops are not on one line, the poops 'land' alternating heights on the ground.",
+      "The oter idea i worked out with another student to have a loading bar that expends infinitly with percentage text."
+    ],
+    "summary": "A click based website to freshen up javascript.",
+    "learned": [
+      "javascript element size percentage control.",
+      "Javascript location coördinates.",
+      "css calculations with different units."
+    ],
+    "imageLinks": [
+      "useless_web_pigeon.jpg",
+      "useless_web_loader.jpg"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "dynamic typography (individual)",
+    "subject": "Design 4",
+    "datetime": "2024-03-05T18:10:08.088+01:00",
+    "context": "a word with animated elements.",
+    "introduction": "Create an animation from a given word.",
+    "tags": [
+      "HTML",
+      "JavaScript",
+      "Design",
+      "CSS",
+      "illustrator",
+      "SVG",
+      "scetching"
+    ],
+    "texts":
+    [
+      "Based on a given word make an animated word logo. The given word for me was 'planet'.",
+      "To get some ideas I scetched out some ideas and quickly came with the letter A being a spaceship. later it formed to be a iftoff from a planet.",
+      "I illustrated the planet in illustrator and imported it as a SVG. The spaceship is a font letter that flies up into the rest of the word.",
+      "the animation loops infinitly. between the landing and liftoff is a small pause made by JavaScript timing functions."
+    ],
+    "summary": "A click based website to freshen up javascript.",
+    "learned": [
+      "CSS animations.",
+      "Javascript timing functions.",
+      "Animation toggeling.",
+      "Make Illustrator vectors and export them."
+    ],
+    "imageLinks": [
+      "word_logo_planet.jpg"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "dynamic typography (group)",
+    "subject": "Design 4",
+    "datetime": "2024-03-05T18:10:08.088+01:00",
+    "context": "Word logos with animated elements.",
+    "introduction": "Create a mix of animated logos from given words.",
+    "tags": [
+      "HTML",
+      "JavaScript",
+      "Design",
+      "CSS",
+      "Figma",
+      "SVG",
+      "scetching"
+    ],
+    "texts":
+    [
+      "We started off scetching out ideas for the given words. from the different options we got the words 'ocean', 'galaxy', and 'computer'.",
+      "We made pseudo animations in figma and presented our ideas towards other groups, this way we eleminated bad ideas and got feedback for the good ones.",
+      "In one of the logos we wanted to put sounds. We found out that Chrome blocks sounds if they are not initialized by the user. we made a workaround that there is some text to start the sound from user interaction."
+    ],
+    "summary": "Scretch, present, and make dynamic logos from 3 given word.",
+    "learned": [
+      "Advanced CSS animations.",
+      "Css path animations.",
+      "Enabeling sounds in browser."
+    ],
+    "imageLinks": [
+      "word_logo_ocean.jpg",
+      "word_logo_scetch.jpg",
+      "word_logo_galaxy.jpg",
+      "word_logo_computer.jpg"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "dynamic poster",
+    "subject": "Design 4",
+    "datetime": "2024-04-30T08:45:08.088+02:00",
+    "context": "A single file, animated poster based of a movie.",
+    "introduction": "Create a poster in a single file without javascript or imported elements.",
+    "tags": [
+      "HTML",
+      "JavaScript",
+      "Design",
+      "CSS",
+      "Figma",
+      "Illustrator",
+      "SVG",
+      "scetching"
+    ],
+    "texts":
+    [
+      "After selecting a movie from a list I watched the movie to pick up on any subjects i could base my poster around. Quickly i noticed the polaroid pictures were a big subject of the movie, this along with the forgetting.",
+      "The process of finding a colourscheme and a artstyle was don with figma. I made hte scetches digitally in Figma to increase my skills with illustrating.",
+      "I made some vector drawings in illustrator to test my skills and have something that has the likes of the main character. in figma i prototyped a quick layout with the basic elements.",
+      "Programming the animations and working without any imports (so no JavaScript) was a challenge. the raw SVG imports made the file very cumbersome to work in."
+    ],
+    "summary": "Scetch a poster based on the movie Memento and animate it all in a single HTML file. create all SVG illustrations.",
+    "learned": [
+      "Advanced CSS animations.",
+      "mutate SVG path, size, and colours.",
+      "Making SVGs from images in Illustrator.",
+      "Figma vector illustrations."
+    ],
+    "imageLinks": [
+      "dynamic_poster.jpg",
+      "dynamic_poster_scetch.jpg",
+      "dynamic_poster_moodboard.jpg"
+    ]
   }
 ]

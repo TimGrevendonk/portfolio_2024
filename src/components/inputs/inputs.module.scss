@@ -24,9 +24,14 @@
         background-color: $mountain-shade-50;
         scale: 1.05;
         width: calc(100% - 2rem - 5%);
-        transition: all 0.1s ease-out;
-        
+        transition: all 0.1s ease-out; 
     }
+    &.highlighted {
+        background-color: $sunrise-yellow-75;
+        color: $mountain-blue;
+        font-weight: 400;
+    }
+
     span {
         width: 2em;
     }

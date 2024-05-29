@@ -38,7 +38,7 @@ export function ProjectDetailPage() {
                         <figure>
                             <img src={images(`./${image}`)} alt={image} />
                         </figure>
-                    ))};
+                    ))}
 
                 </div>
             </div>

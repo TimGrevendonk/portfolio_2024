@@ -158,6 +158,9 @@ export function HomePage() {
                 <LinkButton path={"https://www.provil.be/nl/studie/operator-cnc-gestuurde-houtbewerkingsmachines-duaal"} endContent={<LaunchOutlinedIcon />}>
                     Industrial Woodworking
                 </LinkButton>
+                <LinkButton path={"/process"} endContent={<ArrowRightOutlinedIcon />} highlighted={true}>
+                   design approach
+                </LinkButton>
             </div>
 
         </section>

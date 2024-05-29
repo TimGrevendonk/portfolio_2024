@@ -1,6 +1,28 @@
+@import 'styles/partials/variables';
+
 .projectsList {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 4px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    > div {
+        max-width: 1280px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 4px;
+    }
+    a {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-bottom: 0.5em;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        &:hover {
+            color: $mountain-blue;
+        }
+        p {
+            font-size: 0.7em;
+            text-align: center;
+        }
+    }
 }

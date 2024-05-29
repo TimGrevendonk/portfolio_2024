@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from "react-router-dom";
 import styles from "components/carousel/carousel.module.scss";
 
 // ImageCarouselItem function:
@@ -13,10 +14,10 @@ export function ImageCarouselItem({project, ...props }) {
 
     return (
         <div onClick={scollhere} onDrag={scollhere} ref={itemRef} className={`${styles.carouselItem} carouselItem`}>
-                <div className={styles.headers}>
-                    <h3>{project.title}</h3>
+                <Link to={`projects/project/${project.id}`} className={styles.headers}>
+                    <h4>{project.title}</h4>
                     <p>{project.introduction}</p>
-                </div>
+                </Link>
                 <figure>
                     {/* Set the name of the image only in the JSON. */}
                     {project.imageLinks ?
@@ -24,10 +25,10 @@ export function ImageCarouselItem({project, ...props }) {
                         : null 
                     }
                 </figure>
-                <div className={styles.headers}>
-                    <h3>{project.title}</h3>
+                <Link to={`projects/project/${project.id}`} className={styles.headers}>
+                    <h4>{project.title}</h4>
                     <p>{project.introduction}</p>
-                </div>
+                </Link>
         </div>
     );
 }
