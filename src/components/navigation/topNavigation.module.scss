@@ -41,6 +41,17 @@
             justify-content: center;
             
         }
+        @media  (max-width: 768px) {
+            li:not(:last-child):not(:first-child) {
+                display: none;
+            }
+        }
+        @media  (max-width: 540px) {
+            li:not(:last-child) {
+                display: none;
+            }
+        }
+
     }
 
 }

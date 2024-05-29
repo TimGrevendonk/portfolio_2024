@@ -56,7 +56,7 @@ export function BottomFooter({ ...props }) {
                     </li>
                     <li>
                         <LinkText 
-                        path="/https://www.linkedin.com/in/tim-grevendonk/"
+                        path="https://www.linkedin.com/in/tim-grevendonk/"
                         startContent={<PhonelinkOutlinedIcon />}
                         >
                         Linkdin 

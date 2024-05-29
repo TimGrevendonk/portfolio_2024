@@ -798,7 +798,6 @@
     "introduction": "Create a poster in a single file without javascript or imported elements.",
     "tags": [
       "HTML",
-      "JavaScript",
       "Design",
       "CSS",
       "Figma",
@@ -824,6 +823,42 @@
       "dynamic_poster.jpg",
       "dynamic_poster_scetch.jpg",
       "dynamic_poster_moodboard.jpg"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "CSS zen garden",
+    "subject": "Design 4",
+    "datetime": "2024-05-14T11:30:08.088+02:00",
+    "context": "Re-style a HTML file.",
+    "introduction": "Re-style the CSS zen garden HTML template without making chages to it. no JavaScript.",
+    "tags": [
+      "HTML",
+      "Design",
+      "CSS",
+      "Figma",
+      "SVG",
+      "scetching"
+    ],
+    "texts":
+    [
+      "As a group we collectively voted on subjects that were given. I got 'postmodernistic achitecture' as a subject.",
+      "First i looked up what is most correlated with postmodernism and find its colours that way. i looked for postmodernistic acitecture and together with the colours i made several moodboards.",
+      "I found architecture alone a hard topic to find interesting things for, so i had the idea to combine surrealism with it as it is also a very postmodern thing. i adjusted my moodboards.",
+      "programatically i struggled with the use of :before and :after psuedo selectors. Due to surrealism and postmodenrism combined i had a lot of odd shapes and textures.",
+      "Anoter big challenge was getting everything responsive enough so the shapes arent all stretched out or squished together."
+    ],
+    "summary": "With digital and developing scetching make a layout for a HTML template without making changes to it.",
+    "learned": [
+      "CSS :before and :after pseudo selectors.",
+      "CSS vackground image possibilities.",
+      "Shape clipping paths and aligning text to it.",
+      "Figma vector illustrations."
+    ],
+    "imageLinks": [
+      "zengarden_landing.jpg",
+      "zengarden_moodboard.jpg",
+      "zengarden_blocks.jpg"
     ]
   }
 ]

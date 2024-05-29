@@ -35,7 +35,7 @@ export function ProjectDetailPage() {
                 </div>
                 <div className={`${carouselStyles.carouselItem} ${styles.images}`}>
                     {project.imageLinks.map((image, index) => (
-                        <figure>
+                        <figure key={index}>
                             <img src={images(`./${image}`)} alt={image} />
                         </figure>
                     ))}
@@ -51,15 +51,15 @@ export function ProjectDetailPage() {
                     <div  className={styles.tags}>
                         <h3>Quick tags</h3>
                         <ul>
-                            {project.tags.map((tag) =>
-                                <li>{tag}</li>
+                            {project.tags.map((tag, index) =>
+                                <li key={index}>{tag}</li>
                             )};
                         </ul>
                     </div>
                     <div  className={styles.text}>
                         <h3>Project content</h3>
-                        {project.texts.map((text) => 
-                            <p>{text}</p>
+                        {project.texts.map((text, index) => 
+                            <p key={index}>{text}</p>
                         )}
                     </div>
                 </div>
@@ -74,8 +74,8 @@ export function ProjectDetailPage() {
                         <p>{project.summary}</p>
                     </div>
                     <ul>
-                        {project.learned.map((text) =>
-                                <li>
+                        {project.learned.map((text, index) =>
+                                <li key={index}>
                                     {text}
                                 </li>
                             )}
