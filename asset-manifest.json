@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio_2024/static/css/main.ec4b5674.css",
-    "main.js": "/portfolio_2024/static/js/main.7344168f.js",
+    "main.css": "/portfolio_2024/static/css/main.be32cc75.css",
+    "main.js": "/portfolio_2024/static/js/main.7b92ffbd.js",
     "static/js/453.addf49e5.chunk.js": "/portfolio_2024/static/js/453.addf49e5.chunk.js",
     "static/media/parchment-horizontal.JPG": "/portfolio_2024/static/media/parchment-horizontal.953f063a16bc3bb5120e.JPG",
+    "static/media/CV_Tim_Grevendonk.pdf": "/portfolio_2024/static/media/CV_Tim_Grevendonk.da6a05b8a1c00600151c.pdf",
     "static/media/mediacafe-me 1.png": "/portfolio_2024/static/media/mediacafe-me 1.dbaad354a855eea5710b.png",
     "static/media/nmbs_hackaton_planning.png": "/portfolio_2024/static/media/nmbs_hackaton_planning.b6a6319cd1d0a83fd224.png",
     "static/media/hoppin_live_test.jpg": "/portfolio_2024/static/media/hoppin_live_test.65c3e605d54eaaa9644a.jpg",
-    "static/media/CV_Tim_Grevendonk.pdf": "/portfolio_2024/static/media/CV_Tim_Grevendonk.6e17d9022f2984bbbbd1.pdf",
     "static/media/lessons_school.jpg": "/portfolio_2024/static/media/lessons_school.a02265cc5d45f97043c2.jpg",
     "static/media/dorm_nighttime.jpg": "/portfolio_2024/static/media/dorm_nighttime.b034b9253aa4dede9915.jpg",
     "static/media/IOT_project_wavemeter.jpg": "/portfolio_2024/static/media/IOT_project_wavemeter.026a2cab598eaba44900.jpg",
@@ -91,12 +91,12 @@
     "static/media/Figma.svg": "/portfolio_2024/static/media/Figma.f577500fbb0169a31432.svg",
     "static/media/Angular.svg": "/portfolio_2024/static/media/Angular.a1efcd6eb444f86365f0.svg",
     "static/media/Tailwind.svg": "/portfolio_2024/static/media/Tailwind.973c73e85d4daa24b257.svg",
-    "main.ec4b5674.css.map": "/portfolio_2024/static/css/main.ec4b5674.css.map",
-    "main.7344168f.js.map": "/portfolio_2024/static/js/main.7344168f.js.map",
+    "main.be32cc75.css.map": "/portfolio_2024/static/css/main.be32cc75.css.map",
+    "main.7b92ffbd.js.map": "/portfolio_2024/static/js/main.7b92ffbd.js.map",
     "453.addf49e5.chunk.js.map": "/portfolio_2024/static/js/453.addf49e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec4b5674.css",
-    "static/js/main.7344168f.js"
+    "static/css/main.be32cc75.css",
+    "static/js/main.7b92ffbd.js"
   ]
 }
