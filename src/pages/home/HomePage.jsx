@@ -14,6 +14,7 @@ import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import PictureAsPdfOutlinedIcon from '@mui/icons-material/PictureAsPdfOutlined';import LaunchOutlinedIcon from '@mui/icons-material/LaunchOutlined';
 import styles from "pages/home/homePage.module.scss";
 import { NavigationContext } from "utils/contexts/navigationContext";
+import ReactGA from 'react-ga4';
 
 // Home function:
 export function HomePage() {
@@ -27,6 +28,8 @@ export function HomePage() {
     const {worksRef} = useContext(NavigationContext)
     const {aboutRef} = useContext(NavigationContext)
     const {skillsRef} = useContext(NavigationContext)
+
+    ReactGA.send({hitType: 'pageview', page: window.location.pathname});
 
     return (
         <>
