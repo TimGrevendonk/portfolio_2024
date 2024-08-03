@@ -37,14 +37,11 @@
     }
     svg {
         width: 2em;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
         font-size: 1em;
     }
 }
 
 .LinkText{
-
 }
 
 .actionButton {
@@ -64,5 +61,34 @@
             transition: 0.3s ease-out;
             color: $sunrise-yellow;
         }
+    }
+}
+
+.attentionGrabbing {
+    --rotation: 0.7deg;
+    animation: attentionGrabbing 4s infinite;
+}
+
+@keyframes attentionGrabbing {
+    0% {
+ 
+    }
+    90% {
+        transform: rotate(0deg) 
+    }
+    92% {
+        transform: rotate(var(--rotation))
+    }
+    94% {
+        transform: rotate(calc(var(--rotation) * -1)) 
+    }
+    96% {
+        transform: rotate(var(--rotation)) 
+    }
+    98% {
+        transform: rotate(calc(var(--rotation) * -1)) 
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }

@@ -20,6 +20,7 @@ export function LinkButton({ ...props }) {
     const incommingRef = props.reference;
     const location = useLocation();
     const highlighted = props.highlighted;
+    const attentionGrabbing = props.attentionGrabbing;
 
     const scrollToSection = (sectionRef) => {
       sectionRef?.current?.scrollIntoView({ behavior: 'smooth' });
@@ -30,7 +31,11 @@ export function LinkButton({ ...props }) {
         {incommingRef && location.pathname === "/"?
             <Link
             onClick={() => scrollToSection(incommingRef)}
-            className={`${styles.linkButton} ${props.size ? styles[size] : styles.big} ${highlighted ? styles.highlighted : null}`} 
+            className={`
+                ${styles.linkButton} 
+                ${props.size ? styles[size] : styles.big} 
+                ${highlighted ? styles.highlighted : null} 
+                ${attentionGrabbing ? styles.attentionGrabbing : null}`} 
     
             >
                 {props.startContent ? props.startContent : <span></span>}
@@ -40,7 +45,11 @@ export function LinkButton({ ...props }) {
         : // else check for pdf
         isPdf ?
             <a
-                className={`${styles.linkButton} ${props.size ? styles[size] : styles.big} ${highlighted ? styles.highlighted : null}`} 
+                className={`
+                    ${styles.linkButton} 
+                    ${props.size ? styles[size] : styles.big} 
+                    ${highlighted ? styles.highlighted : null}
+                    ${attentionGrabbing ? styles.attentionGrabbing : null}`} 
                 href={pdfs(`./${path}.pdf`)}
             >
                             {props.startContent ? props.startContent : <span></span>}
@@ -49,7 +58,11 @@ export function LinkButton({ ...props }) {
             </a>
             :
             <Link
-                className={`${styles.linkButton} ${props.size ? styles[size] : styles.big} ${highlighted ? styles.highlighted : null}`} 
+                className={`
+                    ${styles.linkButton} 
+                    ${props.size ? styles[size] : styles.big} 
+                    ${highlighted ? styles.highlighted : null}
+                    ${attentionGrabbing ? styles.attentionGrabbing : null}`} 
                 to={path}
             >
                 {props.startContent ? props.startContent : <span></span>}

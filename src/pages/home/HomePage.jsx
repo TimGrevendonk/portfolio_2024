@@ -143,8 +143,8 @@ export function HomePage() {
                 <h2><AutoStoriesOutlinedIcon />journeys</h2>
             </div>
             <div className={`${styles.journeyContent}`}>
-                <LinkButton pdf={true} path="CV_Tim_Grevendonk" endContent={<PictureAsPdfOutlinedIcon />}>
-                    CV (old)
+                <LinkButton path="CV_Tim_Grevendonk" endContent={<PictureAsPdfOutlinedIcon />} pdf={true}>
+                    Curriculum vitae (CV)
                 </LinkButton>
                 <LinkButton path={"https://thomasmore.be/nl/opleidingen/professionele-bachelor/toegepaste-informatica/application-development/geel/basistraject"} endContent={<LaunchOutlinedIcon />}>
                     Application development
@@ -158,7 +158,7 @@ export function HomePage() {
                 <LinkButton path={"https://www.provil.be/nl/studie/operator-cnc-gestuurde-houtbewerkingsmachines-duaal"} endContent={<LaunchOutlinedIcon />}>
                     Industrial Woodworking
                 </LinkButton>
-                <LinkButton path={"/process"} endContent={<ArrowRightOutlinedIcon />} highlighted={true}>
+                <LinkButton path={"/process"} endContent={<ArrowRightOutlinedIcon />} highlighted={true} attentionGrabbing={true}>
                    design approach
                 </LinkButton>
             </div>

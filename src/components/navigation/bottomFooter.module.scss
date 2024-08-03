@@ -9,8 +9,8 @@
     padding-bottom: 64px;
     text-align: center;
     position: relative;
-
-
+    align-items: center;
+    justify-content: space-around;
     
     &::before {
         content: "";
@@ -28,16 +28,19 @@
     }
 
     > div {
-        display: flex;
-        flex-flow: column nowrap;
-        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+
         h3 {
             padding-bottom: 0.5em;
         }
+        ul {
+            border-left: 2px solid $misty-white;
+        }
         a {
             svg {
-                margin-left: 1em;
-                margin-right: 1em;
+                margin-left: 0.5em;
+                margin-right: 0.5em;
             }
             &:hover {
                 color: $sunrise-yellow;
@@ -46,13 +49,8 @@
         }
     }
 
-
+    // Set the ul on a column on small screens.
     @media  (max-width: 600px) {
-        flex-flow: row wrap;
-        justify-content: center;
-        gap: 2rem;
-        > div {
-            width: calc(50% - 1rem);
-        }
+        display: grid;
     }
 }

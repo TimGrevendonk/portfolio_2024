@@ -42,7 +42,6 @@ export function BottomFooter({ ...props }) {
                     </li>
                 </ul>
             </div>
-            
             <div>
                 <h3>Connect</h3>
                 <ul>

@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -29,10 +30,7 @@ h1, h2, h3 , h4, h5, h6, p, a, li {
     align-items: center;
     line-height: 1.2em;
     svg {
-        margin-left: 0.50em;
-        margin-right: 0.50em;
         font-size: 1.3em;
-        scale: 1.5;
     }
 }
 
@@ -140,6 +138,7 @@ section::before {
     background-size: cover;
     z-index: -1;
 }
+
 .popout {
     transition: scale 0.3s ease-out;
     &:hover, &:active{
@@ -147,3 +146,4 @@ section::before {
         scale: 1.02;
     }
 }
+
