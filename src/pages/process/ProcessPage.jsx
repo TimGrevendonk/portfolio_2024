@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import styles from 'pages/process/processPage.module.scss';
 
 // Process function:
@@ -8,6 +9,15 @@ export function ProcessPage({ ...props }) {
 
     return (
         <>
+        <Helmet>
+            <title>TimG: design process</title>
+            <meta
+                name="description"
+                content="The Processes i go through to make a design for a web project. From the first step to the finalization of the project."
+                data-rh="true"
+            />
+            <link rel="canonical" href="/portfolio/process"></link>
+        </Helmet>
             <section className={`${styles.introduction} ${styles.containerSection}`}>
                 <div className={`${styles.widthSetter}`}>
                     <div className={`${styles.titleSection}`}>
@@ -31,7 +41,12 @@ export function ProcessPage({ ...props }) {
                             </p>
                         </div>
                         <figure>
-                            <img src={images(`./${"workspot-mediacafe"}.jpg`)} alt="workspace" />
+                            <img 
+                                src={images(`./${"workspot-mediacafe"}.jpg`)} 
+                                alt="workspace"
+                                title={"workspot mediacafe"}
+                                loading='eager'    
+                            />
                             <figcaption>
                                 <h2>Great workspots</h2>
                                 <p>And the plants</p>
@@ -48,7 +63,12 @@ export function ProcessPage({ ...props }) {
                     </div>
                     <article>
                         <figure>
-                            <img src={images(`./${"word_to_colour_psycology"}.jpg`)} alt="colours for words" />
+                            <img 
+                                src={images(`./${"word_to_colour_psycology"}.jpg`)} 
+                                alt="colours for words" 
+                                title={"word to colour psycology"}
+                                loading='eager'
+                            />
                             <figcaption>
                                 <h2>Adjectives</h2>
                                 <p>important words</p>

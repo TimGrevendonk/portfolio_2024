@@ -15,7 +15,7 @@ export function TopNavigation({ ...props }) {
     return (
         <nav className={`${styles.navigation} mountain-blue`}>
           <Link to="/">
-            <h1>TimG</h1>
+            <div className={styles.logo}>TimG</div>
           </Link>
           <ul>
             <li>

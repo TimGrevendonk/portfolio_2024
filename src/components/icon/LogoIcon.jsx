@@ -9,7 +9,12 @@ export function LogoIcon({ ...props }) {
     return (
         <>
         <div className={styles.logoIcon}>
-            <img src={vectors(`./${LogoName}.svg`)} alt={cleanName || LogoName} />
+            <img 
+                src={vectors(`./${LogoName}.svg`)} 
+                alt={cleanName || LogoName} 
+                title={cleanName || LogoName} 
+                loading="lazy"
+            />
             <p>{cleanName || LogoName}</p>
         </div>
         </>

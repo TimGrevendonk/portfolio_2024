@@ -12,8 +12,6 @@ const styles = {
     }
 };
 
-console.log(styles.container);
-
 // ErrorPage function:
 export function ErrorPage() {
     return (

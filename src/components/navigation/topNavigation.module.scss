@@ -1,5 +1,7 @@
 @import 'styles/partials/variables';
 
+
+
 .navigation {
     position: relative;
     width: 100%;
@@ -23,6 +25,19 @@
         background-size: cover;
         background-position: top;
         z-index: -1;
+    }
+
+    .logo {
+        font-family: 'Oswald', sans-serif;
+        display: flex;
+        align-items: center;
+        line-height: 1.2em;
+        color: $sunrise-yellow;
+        font-size: clamp(48px, $scale-property, 64px);
+        font-weight: 700;
+        svg {
+            fill: $sunrise-yellow;
+        }
     }
 
     ul {

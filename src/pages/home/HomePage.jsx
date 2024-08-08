@@ -14,6 +14,7 @@ import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import PictureAsPdfOutlinedIcon from '@mui/icons-material/PictureAsPdfOutlined';import LaunchOutlinedIcon from '@mui/icons-material/LaunchOutlined';
 import styles from "pages/home/homePage.module.scss";
 import { NavigationContext } from "utils/contexts/navigationContext";
+import { Helmet } from 'react-helmet-async';
 import ReactGA from 'react-ga4';
 
 // Home function:
@@ -33,6 +34,15 @@ export function HomePage() {
 
     return (
         <>
+        <Helmet>
+            <title>Portfolio Tim Grevendonk</title>
+            <meta
+                name="description"
+                content="The Portfolio website from Tim Grevendonk. To see the processes and works from throughout his bachelors degree and beyond."
+                data-rh="true"
+            />
+            <link rel="canonical" href="/portfolio"></link>
+        </Helmet>
         <section id='home' className={styles.hero}>
             <div>
                 <h1>Tim Grevendonk</h1>
@@ -95,7 +105,12 @@ export function HomePage() {
                 </div>
                 <div className={`${styles.carouselItem}`}>
                     <figure>
-                        <img src={images(`./${"me-train"}.jpg`)} alt="thats me" />
+                        <img 
+                            src={images(`./${"me-train"}.jpg`)} 
+                            alt="thats me" 
+                            title="me waiting for train"
+                            loading="eager"
+                        />
                     </figure>
                     <div className={styles.headers}>
                         <h3>Ready to go...</h3>

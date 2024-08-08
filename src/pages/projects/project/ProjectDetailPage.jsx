@@ -5,6 +5,7 @@ import carouselStyles from "components/carousel/carousel.module.scss";
 import SchoolOutlinedIcon from '@mui/icons-material/SchoolOutlined';
 import ChecklistRtlOutlinedIcon from '@mui/icons-material/ChecklistRtlOutlined';
 import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
+import { Helmet } from 'react-helmet-async';
 import styles from "pages/projects/project/projectDetailPage.module.scss";
 
 
@@ -18,6 +19,15 @@ export function ProjectDetailPage() {
 
     return (
         <>
+        <Helmet>
+            <title>{"TimG: " + project.title}</title>
+            <meta
+                name="description"
+                content={project.introduction}
+                data-rh="true"
+            />
+            <link rel="canonical" href={"/project/" + project.title}></link>
+        </Helmet>
         <section className={styles.introduction}>
             <div className={styles.contentSetter}>
                 <div className={styles.info}>
@@ -36,7 +46,9 @@ export function ProjectDetailPage() {
                 <div className={`${carouselStyles.carouselItem} ${styles.images}`}>
                     {project.imageLinks.map((image, index) => (
                         <figure key={index}>
-                            <img src={images(`./${image}`)} alt={image} />
+                            <img src={images(`./${image}`)} title={image} alt={image} />
+                            {console.log("image:")}
+                            {console.log(image)}
                         </figure>
                     ))}
 
