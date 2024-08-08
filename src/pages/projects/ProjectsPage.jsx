@@ -11,10 +11,10 @@ export function ProjectsPage() {
     return (
         <>
         <Helmet>
-            <title>Projects</title>
+            <title>TimG: Projects</title>
             <meta
                 name="description"
-                content="All teh projects and events the I have made or been to. Each item describes the project in detail what I have learned, technologies i used, and what has been realised."
+                content="All the projects and events the I have made or been to. Each item describes the project in detail what I have learned, technologies I used, and what has been realised."
                 data-rh="true"
             />
             <link rel="canonical" href="/projects"></link>
