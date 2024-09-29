@@ -44,8 +44,8 @@ export function HomePage() {
             <link rel="canonical" href="/portfolio"></link>
         </Helmet>
         <section id='home' className={styles.hero}>
-            <div>
-                <h1>Tim Grevendonk</h1>
+            <div className={"FadeInNotInfinite"}>
+                <h1 className={"movedown"}>Tim Grevendonk</h1>
                 <ActionButton path="/projects">
                     <h2>my projects</h2>
                 </ActionButton>

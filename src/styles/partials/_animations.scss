@@ -1,0 +1,19 @@
+
+.FadeInNotInfinite {
+    animation: FadeInNotInfinite 2.4s ease-out;
+}
+
+.movedown {
+    animation: MoveDown 1.6s ease-out;
+}
+
+
+@keyframes MoveDown {
+    0%   {transform: translate(0px, -20%)}
+    100% {transform: translate(0px, 0px);}
+   } 
+
+@keyframes FadeInNotInfinite {
+    0%   {opacity: 0%;}
+    100% {opacity: 1000%;}
+   } 
