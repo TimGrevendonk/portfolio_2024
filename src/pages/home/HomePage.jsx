@@ -59,7 +59,7 @@ export function HomePage() {
                     </li>
                     <li>
                         <LinkButton path="https://www.linkedin.com/in/tim-grevendonk/">
-                            Linkdin
+                            Linkedin
                         </LinkButton>
                     </li>
                     <li className={styles.phone}>
