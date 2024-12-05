@@ -15,7 +15,7 @@ function App() {
 
   return (    
       // TODO: namecheap does not allow non base url path, find fix for this. 
-      // <BrowserRouter basename="/portfolio_2024">
+      // <BrowserRouter basename="/portfolio">
       <BrowserRouter >
         <Routes>
           <Route path="/" element={<MainLayout />}>
