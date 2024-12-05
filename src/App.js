@@ -14,7 +14,9 @@ ReactGA.initialize(process.env.REACT_APP_ANALYTICS_ID);
 function App() {
 
   return (    
-      <BrowserRouter basename="/portfolio_2024">
+      // TODO: namecheap does not allow non base url path, find fix for this. 
+      // <BrowserRouter basename="/portfolio_2024">
+      <BrowserRouter >
         <Routes>
           <Route path="/" element={<MainLayout />}>
             <Route index element={<HomePage />} />

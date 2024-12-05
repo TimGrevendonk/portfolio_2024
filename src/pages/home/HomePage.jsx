@@ -1,5 +1,5 @@
 import { useOutletContext } from "react-router-dom";
-import { useContext, useRef } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { ActionButton } from 'components/inputs/ActionButton';
 import { LinkButton } from "components/inputs/LinkButton";
 import { ImageCarousel } from "components/carousel/ImageCarousel";
@@ -31,6 +31,37 @@ export function HomePage() {
     const {skillsRef} = useContext(NavigationContext)
 
     ReactGA.send({hitType: 'pageview', page: window.location.pathname});
+
+
+    {/* Fade on scoll test function. ==> */}
+    // https://dev.to/fpaghar/how-to-check-if-an-element-is-visible-in-the-viewport-using-javascript-and-react-hook-4648
+    const [isVisible, setIsVisible] = useState(false);
+    const targetRef = useRef(null);
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsVisible(entry.isIntersecting);
+        },
+        {
+          root: null, // viewport
+          rootMargin: '0px', // no margin
+          threshold: 0.5, // 50% of target visible
+        }
+      );
+  
+      if (targetRef.current) {
+        observer.observe(targetRef.current);
+      }
+  
+      // Clean up the observer
+      return () => {
+        if (targetRef.current) {
+          observer.unobserve(targetRef.current);
+        }
+      };
+    }, []);
+    {/* Fade on scoll test function. <== */}
 
     return (
         <>
@@ -72,7 +103,9 @@ export function HomePage() {
         </section>
 
         <section id="works" ref={worksRef} className={`${styles.works} mountain-blue`}>
-            <div className={styles.title}>
+            {/* Fade on scoll test. */}
+            {/* <div ref={targetRef} className={`${styles.title} ${isVisible ? "FadeInNotInfinite" : ''}`}> */}
+            <div className={`${styles.title}`}>
                 <h2><HomeRepairServiceOutlinedIcon />Works</h2>
                 <LinkButton path={"/projects"} size="small" endContent={<ArrowRightOutlinedIcon/>}>
                     All projects 
